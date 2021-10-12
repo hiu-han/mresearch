@@ -1,0 +1,44 @@
+li {
+  list-style: none;
+}
+
+.cont-mission-wrap {
+  width: 100%;
+  font-size: 0;
+}
+.cont-mission-wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cont-mission-text {
+  float: left;
+  width: 384px;
+  padding-top: 150px;
+  margin-left: 311px;
+  background-color: cadetblue;
+  font-size: 1rem;
+}
+
+.cont-mission-card {
+  float: right;
+  width: calc(100% - 696px);
+  padding: 20px 0;
+  font-size: 0;
+  box-sizing: border-box;
+  overflow-x: scroll;
+}
+
+.mission-card-item {
+  display: inline-block;
+}
+
+.mission-card {
+  width: 276px;
+  height: 410px;
+  margin: 0 10px;
+  background-color: tomato;
+  opacity: 0.6;
+  font-size: 1rem;
+}
