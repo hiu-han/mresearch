@@ -1,14 +1,31 @@
 /*  COMMON  */
-.container {
+#wrap {
+  width: 100%;
+  min-width: 1000px;
+}
+.container,
+.site-news-container {
   position: relative;
   width: 1000px;
   height: 100%;
   padding: 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
+  /* background-color: rgba(0, 255, 255, 0.02); */
 }
 
 /*  HEADER  */
+#mainHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+}
+#header {
+  position: relative;
+  z-index: 200;
+}
 header {
   position: relative;
   width: 100%;
@@ -17,6 +34,7 @@ header {
 header .inner {
   width: 100%;
   height: 100%;
+  background-color: #fff;
 }
 .logo {
   position: absolute;
@@ -25,7 +43,7 @@ header .inner {
   transform: translateY(-50%);
 }
 #mainHeader header .inner {
-  background-color: cadetblue;
+  background-color: rgba(251, 251, 251, 0.1);
   color: #fff;
 }
 
@@ -40,7 +58,7 @@ nav {
 .gnb > .menu-item {
   display: inline-block;
   position: relative;
-  padding: 0 24px;
+  padding: 0 30px;
   font-size: 1rem;
 }
 
@@ -73,12 +91,12 @@ nav {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  background-color: rgba(255, 255, 255);
+  background-color: #fff;
   overflow: hidden;
   z-index: 210;
 }
 #mainHeader .sub-menu {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(251, 251, 251, 0.15);
 }
 .sub-menu > .sub-item:first-child {
   margin-top: 15px;
@@ -93,4 +111,50 @@ nav {
 }
 .sub-menu > .sub-item > a:hover {
   color: #333;
+}
+
+/*  FOOTER  */
+footer {
+  width: 100%;
+}
+footer > section {
+  width: 100%;
+  height: 90px;
+  background-color: #e6e6e6;
+  letter-spacing: -0.05rem;
+}
+
+address {
+  display: inline-block;
+}
+.addr-info > .co-info {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  line-height: 90px;
+  padding-right: 14px;
+  margin-right: 10px;
+  color: #666;
+}
+.addr-info > .co-info::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  top: 51%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #666;
+}
+
+.foot-menu {
+  display: inline-block;
+}
+.personal-policy > a {
+  font-weight: 700;
+  color: #444;
+}
+.personal-policy > a:hover {
+  color: #666;
 }

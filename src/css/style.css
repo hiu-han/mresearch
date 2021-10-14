@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url("./font.css");
+@import url("./index.css");
 
 /*  SAMPLE  */
 .sample {
@@ -25,6 +26,21 @@ button {
   font-family: "Noto Sans KR", Apple Gothic, "Malgun Gothic", sans-serif;
   font-size: 14px;
   color: #2a2a2a;
+  letter-spacing: -0.02rem;
+}
+
+.blind {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -9999px;
+}
+
+.clearFix::after,
+section > .container::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .add-hyphen > p {
@@ -46,4 +62,134 @@ button {
 p > b,
 span > b {
   font-weight: 600;
+}
+
+/* ---- COMPANY page ---- */
+.page-header {
+  width: 100%;
+  min-width: 1000px;
+}
+.page-header > .page-header-inner {
+  width: 100%;
+}
+.page-title-wrap {
+  position: relative;
+  width: 100%;
+  padding: 50px 0 45px;
+  text-align: center;
+  background: darkcyan;
+}
+#companyPage .page-title-wrap {
+  background-image: url("../img/main/");
+}
+.page-title-wrap .page-title-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.page-title-wrap .page-title {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 16px;
+  margin-bottom: 15px;
+}
+.page-title-wrap .page-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 25px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.page-title-wrap .page-desc {
+  position: relative;
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+
+section .container {
+  margin-top: 70px;
+}
+.sec-title {
+  display: inline-block;
+  position: relative;
+  padding-top: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.sec-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 25px);
+  max-width: 200px;
+  height: 3px;
+  background-color: #2a2a2a;
+}
+.sec-content {
+  float: right;
+  width: 72%;
+}
+.sec-content .content-item {
+  margin-top: 30px;
+}
+.content-item > article {
+  width: 100%;
+}
+.content-item > article .info-item {
+  width: 100%;
+  padding-bottom: 22px;
+  font-size: 0;
+}
+.content-item > article .info-item:last-child {
+  padding-bottom: 0;
+}
+.content-item > article .info-item > p,
+.content-item > article .info-item > span {
+  display: inline-block;
+  font-size: 16px;
+}
+.content-item > article .info-item > p {
+  width: 15%;
+  font-weight: 600;
+}
+.content-item > article .info-item > span {
+  width: 85%;
+  font-weight: 400;
+}
+
+/*  BUSINESS_CONTENT page  */
+#businessContentPage .page-title-wrap {
+  background-image: url("../img/main/");
+}
+.page-desc-wrap {
+  width: 1000px;
+  padding: 0 20px;
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+.page-desc-wrap .page-desc {
+  line-height: 1.4;
+  font-size: 20px;
+  font-weight: 700;
+}
+.page-desc-wrap .page-desc-sub {
+  display: inline-block;
+  width: 65%;
+  margin-top: 12px;
+  line-height: 1.4;
+  font-size: 16px;
+  word-break: keep-all;
 }
