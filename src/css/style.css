@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url("./font.css");
 @import url("./index.css");
+@import url("./newContents.css");
 
 /*  SAMPLE  */
 .sample {
@@ -66,6 +67,7 @@ span > b {
   background: darkcyan;
 }
 #companyPage .page-title-wrap {
+  padding: 65px 0 65px;
   background-image: url("../img/main/");
 }
 .page-title-wrap .page-title-bg {
@@ -102,6 +104,12 @@ span > b {
   font-weight: 300;
   color: #fff;
 }
+#companyPage .page-title-wrap .page-title {
+  font-size: 30px;
+}
+#companyPage .page-title-wrap .page-desc {
+  font-size: 18px;
+}
 
 .sec-title {
   display: inline-block;
@@ -124,6 +132,10 @@ span > b {
 .sec-content {
   float: right;
   width: 72%;
+}
+.sec-content.sec-content-full {
+  float: none;
+  width: 100%;
 }
 .sec-content .content-item {
   margin-top: 50px;
@@ -234,7 +246,7 @@ span > b {
 .page-desc-wrap {
   width: 1000px;
   padding: 0 20px;
-  margin: 50px auto;
+  margin: 50px auto 0;
   box-sizing: border-box;
 }
 .page-desc-wrap .page-desc {

@@ -1,0 +1,34 @@
+/* ---- NOTICE page ---- */
+.thumb-img-wrap {
+  width: 300px;
+  height: 200px;
+  background-color: #eee;
+}
+
+#noticePage .thumb-item {
+  padding: 30px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+#noticePage .thumb-item:first-child {
+  padding-top: 0;
+}
+#noticePage .thumb-item:last-child {
+  /* padding-bottom: 0; */
+}
+#noticePage .thumb-item > article {
+  display: flex;
+  justify-content: space-between;
+}
+#noticePage .thumb-item > article > div {
+  display: inline-block;
+}
+#noticePage .thumb-info-wrap {
+  width: 580px;
+}
+#noticePage .thumb-btn-wrap > .btn-arrow {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #3a3a3a;
+}
+/* 300 580 10 */
