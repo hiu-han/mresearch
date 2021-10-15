@@ -114,10 +114,10 @@ nav {
   background-color: rgba(251, 251, 251, 0.15);
 }
 .sub-menu > .sub-item:first-child {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .sub-menu > .sub-item:last-child {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .sub-menu > .sub-item > a {
   line-height: 2.2;

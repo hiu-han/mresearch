@@ -1,7 +1,7 @@
 /* ---- NOTICE page ---- */
 .thumb-img-wrap {
   width: 300px;
-  height: 200px;
+  height: 195px;
   background-color: #eee;
 }
 
@@ -24,11 +24,86 @@
 }
 #noticePage .thumb-info-wrap {
   width: 580px;
+  position: relative;
+}
+#noticePage .thumb-title {
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#noticePage .thumb-date {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #888;
+}
+#noticePage .thumb-content {
+  margin-top: 40px;
+  line-height: 1.5;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  color: #4f4f4f;
+}
+#noticePage .thumb-btn-wrap {
+  position: relative;
+  width: 38px;
+  height: 190px;
 }
 #noticePage .thumb-btn-wrap > .btn-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
   width: 38px;
   height: 38px;
   border-radius: 50%;
   background-color: #3a3a3a;
+  cursor: pointer;
 }
-/* 300 580 10 */
+#noticePage .thumb-btn-wrap > .btn-arrow > a {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  width: 15px;
+  height: 15px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  text-indent: -99999px;
+}
+
+/* ---- RECRUIT page ---- */
+.table-recruit {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #dfdfdf;
+  font-size: 14px;
+}
+.table-recruit thead {
+  height: 40px;
+  line-height: 40px;
+  background-color: #dfdfdf;
+  text-align: center;
+  font-weight: 600;
+}
+.table-recruit tbody th,
+.table-recruit tbody td {
+  vertical-align: middle;
+  border: 1px solid #dfdfdf;
+}
+.table-recruit tbody th {
+  font-weight: 600;
+}
+.table-recruit tbody td {
+  padding: 14px 0 14px 10px;
+}
+.table-recruit tbody td > p {
+  margin-bottom: 8px;
+}
+/* 15 15 35 10 25 */

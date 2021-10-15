@@ -131,7 +131,14 @@ span > b {
 }
 .sec-content {
   float: right;
+  position: relative;
   width: 72%;
+}
+#contactPage .sec-content {
+  width: 50%;
+}
+#recruitPage .sec-content {
+  width: 75%;
 }
 .sec-content.sec-content-full {
   float: none;
@@ -462,4 +469,57 @@ span > b {
 }
 .quality-item > .item-explain > p {
   word-break: keep-all;
+}
+
+/* ---- CONTACT page ---- */
+
+.content-item-map {
+  position: absolute;
+  top: 65px;
+  left: -480px;
+  width: 380px;
+  height: 670px;
+  background-color: #eee;
+}
+
+#contactPage .desc-list-bus .add-hyphen > p {
+  margin-bottom: 10px;
+  color: #333;
+}
+.bus-lines > .line-name {
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  padding-right: 12px;
+  margin-right: 6px;
+}
+.bus-lines > .line-name::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #888;
+}
+.bus-nums {
+  display: block;
+  margin-top: 6px;
+}
+.bus-nums > em {
+  display: inline-block;
+  padding: 0 6px;
+  margin: 3px 2px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  color: #333;
+}
+
+.artic-contact-inquiry .artic-desc > div {
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
 }
