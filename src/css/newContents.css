@@ -27,7 +27,7 @@
   position: relative;
 }
 #noticePage .thumb-title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -47,7 +47,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
-  color: #4f4f4f;
+  color: #666;
 }
 #noticePage .thumb-btn-wrap {
   position: relative;
@@ -77,33 +77,3 @@
   border-right: 2px solid #fff;
   text-indent: -99999px;
 }
-
-/* ---- RECRUIT page ---- */
-.table-recruit {
-  width: 100%;
-  margin-bottom: 20px;
-  border: 1px solid #dfdfdf;
-  font-size: 14px;
-}
-.table-recruit thead {
-  height: 40px;
-  line-height: 40px;
-  background-color: #dfdfdf;
-  text-align: center;
-  font-weight: 600;
-}
-.table-recruit tbody th,
-.table-recruit tbody td {
-  vertical-align: middle;
-  border: 1px solid #dfdfdf;
-}
-.table-recruit tbody th {
-  font-weight: 600;
-}
-.table-recruit tbody td {
-  padding: 14px 0 14px 10px;
-}
-.table-recruit tbody td > p {
-  margin-bottom: 8px;
-}
-/* 15 15 35 10 25 */
