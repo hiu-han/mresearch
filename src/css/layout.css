@@ -174,8 +174,56 @@ address {
   color: #666;
 }
 
+@media all and (max-width: 1024px) {
+}
+
 @media all and (max-width: 768px) {
-  /*  COMMON  */
+  /* ---- COMMON ---- */
+  .mode-ta {
+    display: block;
+  }
+  #wrap {
+    min-width: 100%;
+  }
+  .container,
+  .include-container,
+  .site-news-container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  /*  HEADER  */
+  header {
+    height: 52px;
+  }
+
+  .ham-btn {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    padding: 5px 3px;
+    box-sizing: border-box;
+  }
+  .ham-line {
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 1px;
+    background-color: #fff;
+  }
+  .ham-line-1 {
+    top: 6px;
+  }
+  .ham-line-2 {
+    top: 11px;
+  }
+  .ham-line-3 {
+    top: 16px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  /* ---- COMMON ---- */
   .mode-pc {
     display: none;
   }

@@ -660,3 +660,15 @@ span > b {
   padding: 20px 0;
   text-align: center;
 }
+
+@media all and (max-width: 1024px) {
+}
+
+@media all and (max-width: 768px) {
+  .page-header {
+    min-width: 100%;
+  }
+}
+
+@media all and (max-width: 480px) {
+}
