@@ -273,6 +273,9 @@ section.site-news {
 
 @media all and (max-width: 768px) {
   /* MAIN-BANNER */
+  .main-banner .banner-btn-list {
+    width: 700px;
+  }
   .main-banner .btn-arrow-wrap {
     display: none;
   }
