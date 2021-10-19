@@ -667,6 +667,7 @@ span > b {
 @media all and (max-width: 768px) {
   .page-header {
     min-width: 100%;
+    overflow: hidden;
   }
   .page-title-wrap {
     width: 200%;
