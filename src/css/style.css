@@ -668,6 +668,20 @@ span > b {
   .page-header {
     min-width: 100%;
   }
+  .page-title-wrap {
+    width: 200%;
+    margin-left: -50%;
+  }
+
+  .sec-title {
+    display: block;
+  }
+
+  .sec-content {
+    float: none;
+    width: 92%;
+    margin: 50px auto 0;
+  }
 }
 
 @media all and (max-width: 480px) {

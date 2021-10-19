@@ -273,11 +273,47 @@ section.site-news {
 
 @media all and (max-width: 768px) {
   /* MAIN-BANNER */
-  .main-banner .banner-btn-list {
-    width: 700px;
+  .artic-banner .banner-title {
+    font-size: 38px;
   }
+  .artic-banner .banner-title-sub {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .main-banner .banner-btn-list {
+    height: 38px;
+  }
+  .main-banner .banner-btn-list {
+    width: 94%;
+  }
+  .main-banner .banner-btn > p {
+    font-size: 18px;
+  }
+
   .main-banner .btn-arrow-wrap {
     display: none;
+  }
+
+  /*  QUICK CONTENT  */
+  .site-news .quick-title-wrap {
+    margin-bottom: 35px;
+  }
+  .site-news .content-quick-item {
+    padding: 35px 35px 55px;
+  }
+  .quick-item > .quick-date-wrap {
+    width: 20%;
+  }
+  .quick-date-wrap .quick-year {
+    font-size: 14px;
+  }
+  .quick-date-wrap .quick-date {
+    margin-top: 2px;
+    font-size: 17px;
+  }
+  .quick-item > .quick-content-wrap {
+    width: 80%;
   }
 }
 
