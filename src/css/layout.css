@@ -184,13 +184,13 @@ address {
   }
   #wrap {
     min-width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
   }
   .container,
   .include-container,
   .site-news-container {
     width: 100%;
-    padding: 0 16px;
+    padding: 0 24px;
     box-sizing: border-box;
   }
 
@@ -209,7 +209,7 @@ address {
     display: none;
     width: 100%;
     height: 100vh;
-    margin-left: -16px;
+    margin-left: -24px;
     background-color: rgba(0, 0, 0, 0.4);
   }
   nav.now-on {
@@ -235,15 +235,19 @@ address {
   #mainHeader .gnb > .menu-item > a {
     color: #2a2a2a;
   }
+  #mainHeader .gnb > .menu-item > a:hover {
+    color: #2a2a2a;
+  }
 
   .sub-menu {
     position: relative;
     top: 0;
     width: 100%;
     height: 100%;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     color: #444;
     background-color: #cfcfcf;
+    transition: 0.3s;
   }
   #mainHeader .sub-menu {
     background-color: #cfcfcf;
@@ -269,6 +273,7 @@ address {
     width: 26px;
     height: 2px;
     background-color: #444;
+    transition: 0.3s;
   }
   #mainHeader .ham-line {
     background-color: #fff;
@@ -326,7 +331,16 @@ address {
     display: block;
   }
 
+  .container,
+  .include-container,
+  .site-news-container {
+    padding: 0 16px;
+  }
   /*  HEADER  */
+  nav {
+    margin-left: -16px;
+  }
+
   .ham-btn {
     width: 26px;
     height: 26px;

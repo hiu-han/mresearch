@@ -684,6 +684,14 @@ span > b {
     /* width: 92%; */
     margin: 50px auto 0;
   }
+  #contactPage .sec-content {
+    /* float: right; */
+    /* width: 50%; */
+    width: 96%;
+  }
+  #recruitPage .sec-content {
+    width: 96%;
+  }
 }
 
 @media all and (max-width: 480px) {
