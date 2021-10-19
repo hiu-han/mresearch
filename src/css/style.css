@@ -680,7 +680,8 @@ span > b {
 
   .sec-content {
     float: none;
-    width: 92%;
+    width: 96%;
+    /* width: 92%; */
     margin: 50px auto 0;
   }
 }
