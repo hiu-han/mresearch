@@ -190,24 +190,36 @@ address {
   .site-news-container {
     width: 100%;
     padding: 0 16px;
+    box-sizing: border-box;
   }
 
   /*  HEADER  */
   header {
-    height: 52px;
+    height: 67px;
+  }
+
+  .logo {
+    top: 53%;
+  }
+
+  nav {
+    position: absolute;
+    display: none;
   }
 
   .ham-btn {
+    float: right;
     position: relative;
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     padding: 5px 3px;
+    margin-top: 20px;
     box-sizing: border-box;
   }
   .ham-line {
     position: absolute;
     left: 0;
-    width: 18px;
+    width: 20px;
     height: 1px;
     background-color: #fff;
   }
@@ -215,10 +227,10 @@ address {
     top: 6px;
   }
   .ham-line-2 {
-    top: 11px;
+    top: 12px;
   }
   .ham-line-3 {
-    top: 16px;
+    top: 18px;
   }
 }
 

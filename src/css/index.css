@@ -272,6 +272,10 @@ section.site-news {
 }
 
 @media all and (max-width: 768px) {
+  /* MAIN-BANNER */
+  .main-banner .btn-arrow-wrap {
+    display: none;
+  }
 }
 
 @media all and (max-width: 480px) {
