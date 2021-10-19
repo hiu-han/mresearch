@@ -273,7 +273,7 @@ address {
     width: 26px;
     height: 2px;
     background-color: #444;
-    transition: 0.3s;
+    /* transition: 0.3s; */
   }
   #mainHeader .ham-line {
     background-color: #fff;
