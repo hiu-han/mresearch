@@ -39,6 +39,7 @@ section .container {
 }
 #header {
   position: relative;
+  width: 100%;
   z-index: 200;
 }
 header {
@@ -195,6 +196,11 @@ address {
   }
 
   /*  HEADER  */
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   header {
     height: 67px;
   }
@@ -303,6 +309,14 @@ address {
   }
   .ham-btn.now-on > .ham-line-3 {
     transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  /*  MAIN  */
+  .content-page {
+    padding-top: 67px;
+  }
+  #home-page > div {
+    padding-top: 0px;
   }
 
   /*  FOOTER  */
