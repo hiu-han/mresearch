@@ -937,7 +937,7 @@ span > b {
   .quality-item {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 35px;
+    margin-top: 40px;
   }
   .quality-item > .middle-bar {
     width: 1px;
@@ -945,6 +945,8 @@ span > b {
     order: 2;
   }
   .quality-item > .item-title {
+    height: 52px;
+    padding-top: 5px;
     margin: 0 auto 20px;
     order: 1;
   }
@@ -952,10 +954,19 @@ span > b {
   .quality-item > .item-explain {
     float: none;
   }
+  .quality-item > .item-title.wide-1 {
+    width: 180px;
+  }
+  .quality-item > .item-title.wide-2 {
+    width: 180px;
+  }
+  .quality-item > .item-title.wide-3 {
+    width: 180px;
+  }
   .quality-item > .item-explain {
     width: 85%;
     height: auto;
-    padding: 14px 16px;
+    padding: 12px 14px;
     margin: 0 auto;
     order: 3;
   }
