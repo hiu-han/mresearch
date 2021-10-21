@@ -350,6 +350,10 @@ address {
   .site-news-container {
     padding: 0 16px;
   }
+  section .container {
+    padding: 50px 16px;
+  }
+
   /*  HEADER 480px */
   header {
     height: 52px;
@@ -365,6 +369,9 @@ address {
 
   nav {
     margin-left: -16px;
+  }
+  nav .gnb {
+    padding: 60px 0 20px;
   }
   .gnb > .menu-item > a {
     line-height: 55px;

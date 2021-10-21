@@ -332,13 +332,13 @@ section.site-news {
     font-size: 26px;
   }
   .artic-banner .banner-title-sub {
-    width: 310px;
+    width: 260px;
     margin: 24px auto 0;
     font-size: 14px;
   }
 
   .main-banner .banner-btn-list {
-    bottom: 10%;
+    bottom: 12%;
     height: 32px;
   }
   .main-banner .banner-btn.now-on .btn-topper {

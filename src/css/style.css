@@ -133,7 +133,6 @@ span > b {
   width: 100%;
   padding: 60px 0 60px;
   text-align: center;
-  background: rgba(0, 139, 139, 0.075);
   background-size: cover;
   background-position: center;
 }
@@ -675,7 +674,7 @@ span > b {
   }
 
   .sec-title {
-    display: block;
+    display: inline-block;
   }
 
   .sec-content {
@@ -693,18 +692,13 @@ span > b {
     width: 96%;
   }
 
-  .sec-content .content-item:first-child {
-    /* margin-top: 5px; */
-  }
-
-  /*  CONTENT page  */
+  /*  CONTACT page  */
   .content-item-map {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 360px;
-    /* margin-top: -25px !important; */
   }
 
   /*  RECRUIT page  */
@@ -714,4 +708,175 @@ span > b {
 }
 
 @media all and (max-width: 480px) {
+  .page-title-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0;
+    padding: 30px 0 0;
+  }
+  #companyPage .page-title-wrap {
+    padding: 30px 0 0;
+    background-image: none;
+  }
+  #businessContentPage .page-title-wrap,
+  #businessInspectPage .page-title-wrap,
+  #businessQualityPage .page-title-wrap,
+  #businessSecurityPage .page-title-wrap {
+    background-image: none;
+  }
+  #noticePage .page-title-wrap,
+  #noticeViewPage .page-title-wrap {
+    background-image: none;
+  }
+  #pressPage .page-title-wrap,
+  #pressViewPage .page-title-wrap {
+    background-image: none;
+  }
+  #contactPage .page-title-wrap {
+    background-image: none;
+  }
+  #recruitPage .page-title-wrap {
+    background-image: none;
+  }
+
+  .page-title-wrap .page-title-bg {
+    position: relative;
+    width: 150%;
+    height: 150px;
+    margin-top: 30px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    order: 3;
+  }
+  #companyPage .page-title-wrap .page-title-bg {
+    background-image: url("../img/main/topprt_00_480.png");
+  }
+  #businessContentPage .page-title-wrap .page-title-bg,
+  #businessInspectPage .page-title-wrap .page-title-bg,
+  #businessQualityPage .page-title-wrap .page-title-bg,
+  #businessSecurityPage .page-title-wrap .page-title-bg {
+    background-image: url("../img/main/topper_01.png");
+  }
+  #noticePage .page-title-wrap .page-title-bg,
+  #noticeViewPage .page-title-wrap .page-title-bg {
+    background-image: url("../img/main/topper_02.png");
+  }
+  #pressPage .page-title-wrap .page-title-bg,
+  #pressViewPage .page-title-wrap .page-title-bg {
+    background-image: url("../img/main/topprt_03.png");
+  }
+  #contactPage .page-title-wrap .page-title-bg {
+    background-image: url("../img/main/topprt_00_480.png");
+  }
+  #recruitPage .page-title-wrap .page-title-bg {
+    background-image: url("../img/main/topprt_04.jpg");
+  }
+
+  .page-title-wrap .page-title {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 14px;
+    margin-bottom: 13px;
+    font-size: 24px;
+    color: #2a2a2a;
+    order: 1;
+  }
+  .page-title-wrap .page-title::after {
+    width: 22px;
+    height: 1px;
+    background-color: #2a2a2a;
+  }
+  #companyPage .page-title-wrap .page-title {
+    font-size: 24px;
+  }
+  .page-title-wrap .page-desc {
+    width: 80vw;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2a2a2a;
+    word-break: keep-all;
+    order: 2;
+  }
+  #companyPage .page-title-wrap .page-desc {
+    width: 65vw;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  #businessQualityPage .page-title-wrap .page-desc {
+    width: 62vw;
+  }
+  #businessSecurityPage .page-title-wrap .page-desc {
+    width: 60vw;
+  }
+
+  .sec-title::before {
+    width: 100%;
+  }
+  .sec-content {
+    width: 100%;
+    margin: 40px auto 0;
+  }
+
+  /*  COMPANY page 480px  */
+  #companyPage section.company-history {
+    background-color: #f7f7f7;
+  }
+
+  section.company-info .content-item > article .info-item > p {
+    width: 27%;
+  }
+  section.company-info .content-item > article .info-item > span {
+    width: 73%;
+  }
+  .content-item > article .info-item {
+  }
+  .content-item > article .info-item > p,
+  .content-item > article .info-item > span {
+    vertical-align: top;
+    font-size: 15px;
+  }
+
+  .history-box dl dt.history-year {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .history-explain {
+    width: 100%;
+  }
+  .history-box {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  .history-box:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  .history-explain .history-month,
+  .history-explain .history-text > span {
+    font-size: 15px;
+  }
+  .history-explain .history-text > span {
+    color: #444;
+  }
+
+  .artic-organ-desc > p {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .artic-organ-desc > span {
+    width: 100%;
+    font-size: 15px;
+  }
+  .company-organization .artic-img {
+    width: 100%;
+    height: 260px;
+  }
 }
