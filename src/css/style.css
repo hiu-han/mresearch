@@ -812,12 +812,20 @@ span > b {
     width: 60vw;
   }
 
+  .sec-title {
+    font-weight: 800;
+  }
   .sec-title::before {
     width: 100%;
+    max-width: 100%;
   }
   .sec-content {
     width: 100%;
     margin: 40px auto 0;
+  }
+
+  .artic-desc-wrap .artic-desc > p {
+    line-height: 1.6;
   }
 
   /*  COMPANY page 480px  */
@@ -831,8 +839,6 @@ span > b {
   section.company-info .content-item > article .info-item > span {
     width: 73%;
   }
-  .content-item > article .info-item {
-  }
   .content-item > article .info-item > p,
   .content-item > article .info-item > span {
     vertical-align: top;
@@ -842,7 +848,7 @@ span > b {
   .history-box dl dt.history-year {
     display: block;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     font-size: 20px;
   }
   .history-explain {
@@ -858,12 +864,26 @@ span > b {
     margin-bottom: 0;
     border-bottom: none;
   }
+  .history-box .history-month,
+  .history-box .history-text {
+    margin-bottom: 16px;
+  }
+  .history-explain .history-month {
+    width: 23%;
+    padding-left: 5px;
+    box-sizing: border-box;
+    font-weight: 700;
+    color: #2a2a2a;
+  }
+  .history-explain .history-text {
+    width: 77%;
+  }
   .history-explain .history-month,
   .history-explain .history-text > span {
     font-size: 15px;
   }
   .history-explain .history-text > span {
-    color: #444;
+    color: #616161;
   }
 
   .artic-organ-desc > p {
@@ -878,5 +898,69 @@ span > b {
   .company-organization .artic-img {
     width: 100%;
     height: 260px;
+  }
+
+  /*  BUSINESS CONTENT page 480px  */
+  .row-box {
+    display: block;
+  }
+  .row-item {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  .row-item .img-wrap {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+  }
+  .row-item .img-wrap img {
+    width: 100%;
+  }
+
+  /*  BUSINESS INSPECT page 480px  */
+  .artic-interview .artic-img {
+    height: auto;
+  }
+  .artic-interview .artic-img > svg {
+    height: auto;
+  }
+
+  .artic-qualitative .artic-img-box > em {
+    height: auto;
+  }
+
+  .artic-online .artic-desc .desc-list-wrap {
+    margin-top: 0;
+  }
+
+  /*  BUSINESS QUALITY page 480px  */
+  .quality-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+  }
+  .quality-item > .middle-bar {
+    width: 1px;
+    height: 80px;
+    order: 2;
+  }
+  .quality-item > .item-title {
+    margin: 0 auto 20px;
+    order: 1;
+  }
+  .quality-item > .item-title,
+  .quality-item > .item-explain {
+    float: none;
+  }
+  .quality-item > .item-explain {
+    width: 85%;
+    height: auto;
+    padding: 14px 16px;
+    margin: 0 auto;
+    order: 3;
+  }
+  .quality-item > .item-explain > p {
+    line-height: 1.5;
+    text-align: center;
   }
 }

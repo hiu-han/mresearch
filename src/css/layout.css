@@ -411,4 +411,7 @@ address {
   }
 
   /*  FOOTER  */
+  footer > .foot-inner {
+    padding: 20px 0;
+  }
 }
