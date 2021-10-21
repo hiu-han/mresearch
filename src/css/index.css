@@ -325,6 +325,9 @@ section.site-news {
   .main-banner .banner-content {
     height: 80vh;
   }
+  .artic-banner .banner-title-wrap {
+    top: 45%;
+  }
   .artic-banner .banner-title {
     font-size: 26px;
   }
@@ -335,7 +338,8 @@ section.site-news {
   }
 
   .main-banner .banner-btn-list {
-    bottom: 12%;
+    bottom: 10%;
+    height: 32px;
   }
   .main-banner .banner-btn.now-on .btn-topper {
     height: 4px;
@@ -346,7 +350,7 @@ section.site-news {
 
   /*  QUICK SECTION 480px  */
   section.site-news {
-    padding: 40px 0 50px;
+    padding: 60px 0 60px;
   }
 
   .site-news .content-quick-item {

@@ -59,7 +59,7 @@ header .inner {
   transform: translateY(-50%);
 }
 #mainHeader header .inner {
-  background-color: rgba(251, 251, 251, 0.1);
+  background-color: rgba(251, 251, 251, 0.15);
   color: #fff;
 }
 
@@ -350,7 +350,7 @@ address {
   .site-news-container {
     padding: 0 16px;
   }
-  /*  HEADER  */
+  /*  HEADER 480px */
   header {
     height: 52px;
   }
@@ -365,6 +365,13 @@ address {
 
   nav {
     margin-left: -16px;
+  }
+  .gnb > .menu-item > a {
+    line-height: 55px;
+    font-size: 17px;
+  }
+  .sub-menu > .sub-item > a {
+    font-size: 16px;
   }
 
   .ham-btn {
@@ -389,6 +396,11 @@ address {
   }
   .ham-btn.now-on > .ham-line {
     width: 28px;
+  }
+
+  /*  MAIN  */
+  .content-page {
+    padding-top: 52px;
   }
 
   /*  FOOTER  */
