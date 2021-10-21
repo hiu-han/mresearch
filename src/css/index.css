@@ -1,5 +1,6 @@
 /* ---- MAIN BANNER section ---- */
 .main-banner .banner-content {
+  position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -14,7 +15,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   font-size: 1rem;
   background-position: center center;
   background-size: cover;
@@ -143,10 +144,10 @@ section.site-news {
   padding: 100px 0;
 }
 .site-news .site-news-title {
+  margin-bottom: 60px;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 60px;
 }
 .site-news .content-quick-item {
   width: calc(50% - 10px);
@@ -178,10 +179,12 @@ section.site-news {
   position: absolute;
   top: 50%;
   right: 0;
+  width: 24px;
+  height: 24px;
   transform: translateY(-50%);
 }
 .site-news .quick-title-wrap .btn-more-plus > a {
-  display: inline-block;
+  display: block;
   position: relative;
   text-indent: -99999px;
 }
@@ -272,7 +275,7 @@ section.site-news {
 }
 
 @media all and (max-width: 768px) {
-  /* MAIN-BANNER */
+  /*  MAIN-BANNER 768px  */
   .artic-banner .banner-title {
     font-size: 38px;
   }
@@ -295,7 +298,7 @@ section.site-news {
     display: none;
   }
 
-  /*  QUICK CONTENT  */
+  /*  QUICK CONTENT 768px  */
   .site-news .quick-title-wrap {
     margin-bottom: 35px;
   }
@@ -318,4 +321,65 @@ section.site-news {
 }
 
 @media all and (max-width: 480px) {
+  /*  MAIN-BANNER 480px  */
+  .main-banner .banner-content {
+    height: 80vh;
+  }
+  .artic-banner .banner-title {
+    font-size: 26px;
+  }
+  .artic-banner .banner-title-sub {
+    width: 310px;
+    margin: 24px auto 0;
+    font-size: 14px;
+  }
+
+  .main-banner .banner-btn-list {
+    bottom: 12%;
+  }
+  .main-banner .banner-btn.now-on .btn-topper {
+    height: 4px;
+  }
+  .main-banner .banner-btn > p {
+    font-size: 15px;
+  }
+
+  /*  QUICK SECTION 480px  */
+  section.site-news {
+    padding: 40px 0 50px;
+  }
+
+  .site-news .content-quick-item {
+    width: 100%;
+    padding: 30px 24px 50px;
+    margin-bottom: 30px;
+  }
+  .site-news .content-quick-item:last-child {
+    margin-bottom: 0;
+  }
+  .site-news .site-news-title {
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+
+  .site-news .quick-title-wrap .quick-title {
+    font-size: 24px;
+  }
+  .site-news .quick-title-wrap .quick-title-sub {
+    margin-top: 4px;
+    font-size: 18px;
+  }
+  .quick-date-wrap .quick-date {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  /*  MAIN-BANNER 320px  */
+  .artic-banner .banner-title {
+    font-size: 22px;
+  }
+  .artic-banner .banner-title-sub {
+    font-size: 13px;
+  }
 }

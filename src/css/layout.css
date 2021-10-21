@@ -351,6 +351,18 @@ address {
     padding: 0 16px;
   }
   /*  HEADER  */
+  header {
+    height: 52px;
+  }
+  .logo {
+    left: 50%;
+    width: 90px;
+    transform: translate(-50%, -50%);
+  }
+  .logo img {
+    width: 100%;
+  }
+
   nav {
     margin-left: -16px;
   }
@@ -359,7 +371,7 @@ address {
     width: 26px;
     height: 26px;
     padding: 5px 3px;
-    margin-top: 20px;
+    margin-top: 13px;
   }
   .ham-line {
     left: 0;
