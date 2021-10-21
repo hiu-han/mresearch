@@ -419,7 +419,6 @@ span > b {
   width: 100%;
   height: 505px;
   margin-top: 30px;
-  /* background-color: #eee; */
 }
 .artic-interview .artic-img > svg {
   width: 100%;
@@ -680,12 +679,9 @@ span > b {
   .sec-content {
     float: none;
     width: 96%;
-    /* width: 92%; */
     margin: 25px auto 0;
   }
   #contactPage .sec-content {
-    /* float: right; */
-    /* width: 50%; */
     width: 96%;
   }
   #recruitPage .sec-content {
@@ -824,6 +820,9 @@ span > b {
     margin: 40px auto 0;
   }
 
+  .artic-title-wrap {
+    margin-bottom: 20px;
+  }
   .artic-desc-wrap .artic-desc > p {
     line-height: 1.6;
   }
@@ -916,6 +915,13 @@ span > b {
   .row-item .img-wrap img {
     width: 100%;
   }
+  .row-item .info-wrap > .info-title {
+    font-size: 17px;
+  }
+  .row-item .info-wrap > p {
+    line-height: 1.5;
+    font-size: 15px;
+  }
 
   /*  BUSINESS INSPECT page 480px  */
   .artic-interview .artic-img {
@@ -929,7 +935,11 @@ span > b {
     height: auto;
   }
 
-  .artic-online .artic-desc .desc-list-wrap {
+  section.business-inspect-online
+    .content-item:last-child
+    .artic-online
+    .artic-desc
+    .desc-list-wrap {
     margin-top: 0;
   }
 
@@ -946,7 +956,7 @@ span > b {
   }
   .quality-item > .item-title {
     height: 52px;
-    padding-top: 5px;
+    padding-top: 6px;
     margin: 0 auto 20px;
     order: 1;
   }
