@@ -264,4 +264,38 @@
 }
 
 @media all and (max-width: 480px) {
+  /*  NOTICE page  */
+  #noticePage .thumb-item > article {
+    display: block;
+  }
+  #noticePage .thumb-item > article > div {
+    display: block;
+    width: 100%;
+  }
+  #noticePage .thumb-item > article > .thumb-img-wrap {
+    width: 100%;
+  }
+  #noticePage .thumb-title {
+    font-size: 17px;
+  }
+
+  /*  PRESS page  */
+  #pressPage .thumb-item {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #efefef;
+  }
+  #pressPage .thumb-item:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  #pressPage .thumb-img-wrap {
+    height: auto;
+  }
+  .thumb-img-wrap > a > img {
+    position: relative;
+    transform: none;
+  }
 }
