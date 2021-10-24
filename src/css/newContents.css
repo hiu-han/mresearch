@@ -265,6 +265,18 @@
 
 @media all and (max-width: 480px) {
   /*  NOTICE page  */
+  #noticePage .content-item,
+  #noticePage .sec-content,
+  #pressPage .content-item,
+  #pressPage .sec-content {
+    margin-top: 0;
+  }
+  #noticePage .thumb-item {
+    padding: 25px 0;
+  }
+  #noticePage .thumb-item:last-child {
+    border-bottom: none;
+  }
   #noticePage .thumb-item > article {
     display: block;
   }
@@ -275,8 +287,18 @@
   #noticePage .thumb-item > article > .thumb-img-wrap {
     width: 100%;
   }
+  #noticePage .thumb-info-wrap {
+    margin-top: 14px;
+  }
   #noticePage .thumb-title {
     font-size: 17px;
+  }
+  #noticePage .thumb-content {
+    margin-top: 14px;
+    -webkit-line-clamp: 3;
+  }
+  #noticePage .thumb-item > article > .thumb-btn-wrap {
+    display: none;
   }
 
   /*  PRESS page  */
