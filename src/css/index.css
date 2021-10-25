@@ -21,15 +21,16 @@
   background-size: cover;
 }
 .banner-list .banner-item:first-child {
-  /* display: block; */
+  display: block;
+  background-color: #2a2a2a;
   background-image: url("../img/main/mainbanner_001.jpg");
 }
 .banner-list .banner-item:nth-child(2) {
-  /* display: block; */
+  background-color: #2a2a2a;
   background-image: url("../img/main/mainbanner_002.jpg");
 }
 .banner-list .banner-item:nth-child(3) {
-  display: block;
+  background-color: #2a2a2a;
   background-image: url("../img/main/mainbanner_003.png");
 }
 
