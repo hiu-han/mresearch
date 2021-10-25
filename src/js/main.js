@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
   const NOWON_CLASSNAME = "now-on";
-  let $this = $(this);
 
   // gnb > sub opener
   function subOpener() {
@@ -91,4 +90,5 @@ $(document).ready(function () {
     })
   }
   recruitInfoHandler();
+  
 })
