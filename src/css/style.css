@@ -624,6 +624,11 @@ span > b {
   letter-spacing: 0;
 }
 
+.artic-contact-inquiry .artic-desc > p > span {
+  display: inline-block;
+  margin-left: 14px;
+}
+
 /* ---- RECRUIT page ---- */
 .table-recruit {
   width: 100%;
@@ -704,6 +709,9 @@ span > b {
 }
 
 @media all and (max-width: 480px) {
+  .add-hyphen > p::before {
+    top: 10px;
+  }
   .page-title-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -942,6 +950,9 @@ span > b {
     .desc-list-wrap {
     margin-top: 0;
   }
+  .artic-desc .desc-list-wrap .desc-list {
+    margin-bottom: 30px;
+  }
 
   /*  BUSINESS QUALITY page 480px  */
   .quality-item {
@@ -983,5 +994,89 @@ span > b {
   .quality-item > .item-explain > p {
     line-height: 1.5;
     text-align: center;
+  }
+
+  /*  CONTACT page 480px  */
+  #contactPage .desc-list-bus .add-hyphen > p {
+    margin-bottom: 14px;
+  }
+  .bus-lines > .line-name {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  .bus-lines > .line-name::after {
+    display: none;
+  }
+
+  /*  RECRUIT page 480px  */
+  #recruitPage .sec-content {
+    width: 100%;
+  }
+  .artic-recruit .artic-desc.mode-mo {
+    width: 100vw;
+    padding: 10px 16px 0;
+    margin-left: -16px;
+    margin-bottom: 30px;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+  }
+
+  .recruit-title-list {
+    font-size: 0;
+  }
+  .recruit-title-list .recruit-title {
+    display: inline-block;
+    width: 33.33333%;
+    padding: 10px 0;
+    border-bottom: 1px solid #bfbfbf;
+    font-size: 17px;
+    font-weight: 600;
+    color: #bfbfbf;
+    text-align: center;
+  }
+  .recruit-title-list .recruit-title.now-on {
+    border-bottom: 2px solid #444;
+    color: #2a2a2a;
+  }
+
+  .recruit-content-wrap {
+    padding: 10px 0 20px;
+  }
+
+  .recruit-content-list .recruit-content {
+    padding: 24px 0 22px;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  .recruit-content-list:last-child .recruit-content:last-child {
+    border-bottom: none;
+  }
+  .recruit-content .content-title {
+    margin-bottom: 14px;
+    font-size: 16px;
+  }
+  .recruit-content .content-title > b {
+    font-weight: 600;
+  }
+  .recruit-content .content-sub {
+    margin-left: 16px;
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+  .recruit-content .content-sub:last-child {
+    margin-bottom: 0;
+  }
+  .recruit-content .content-sub > dt {
+    margin-bottom: 9px;
+    font-weight: 600;
+  }
+  .recruit-content .content-sub > dd {
+    margin-left: 16px;
+    margin-bottom: 6px;
+  }
+
+  .svg-recruit.mode-mo {
+    width: 100vw;
+    margin-left: -16px;
   }
 }
