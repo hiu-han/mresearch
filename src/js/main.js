@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
   const NOWON_CLASSNAME = "now-on";
+  let $this = $(this);
 
   // gnb > sub opener
   function subOpener() {
@@ -43,4 +44,51 @@ $(document).ready(function () {
 
   init();
 
+  // onPC MAIN BANNER
+  function mainBannerHandler() {
+    const $bannerFir = $(".banner-item").eq(0),
+          $bannerSec = $(".banner-item").eq(1),
+          $bannerThr = $(".banner-item").eq(2);
+    const $bannerBtnFir = $(".banner-btn").eq(0),
+          $bannerBtnSec = $(".banner-btn").eq(1),
+          $bannerBtnThr = $(".banner-btn").eq(2);
+
+    $bannerBtnFir.on("click", function () {
+      $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+      $bannerFir.fadeIn().siblings().fadeOut("slow");
+    })
+    $bannerBtnSec.on("click", function () {
+      $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+      $bannerSec.fadeIn().siblings().fadeOut("slow");
+    })
+    $bannerBtnThr.on("click", function () {
+      $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+      $bannerThr.fadeIn().siblings().fadeOut("slow");
+    })
+  }
+  mainBannerHandler();
+
+  // onMobile RECRUIT page > 인재채용 정보 이벤트
+  function recruitInfoHandler() {
+    const $recruitTitleFirst = $(".recruit-title").eq(0),
+          $recruitTitleSecond = $(".recruit-title").eq(1),
+          $recruitTitleThird = $(".recruit-title").eq(2);
+    const $recruitContentFirst = $(".recruit-content-list").eq(0),
+          $recruitContentSecond = $(".recruit-content-list").eq(1),
+          $recruitContentThird = $(".recruit-content-list").eq(2);
+
+    $recruitTitleFirst.on("click", function () {
+      $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+      $recruitContentFirst.addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+    })
+    $recruitTitleSecond.on("click", function () {
+      $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+      $recruitContentSecond.addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+    })
+    $recruitTitleThird.on("click", function () {
+      $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+      $recruitContentThird.addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+    })
+  }
+  recruitInfoHandler();
 })

@@ -1048,8 +1048,14 @@ span > b {
     padding: 24px 0 22px;
     border-bottom: 1px solid #dfdfdf;
   }
-  .recruit-content-list:last-child .recruit-content:last-child {
+  .recruit-content-list .recruit-content:last-child {
     border-bottom: none;
+  }
+  .recruit-content-list {
+    display: none;
+  }
+  .recruit-content-list.now-on {
+    display: block;
   }
   .recruit-content .content-title {
     margin-bottom: 14px;
