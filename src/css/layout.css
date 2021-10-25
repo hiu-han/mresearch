@@ -341,6 +341,10 @@ address {
     display: block;
   }
 
+  section:last-child {
+    padding-bottom: 0;
+  }
+
   .container,
   .include-container,
   .site-news-container {
