@@ -339,11 +339,17 @@ span > b {
   float: right;
   margin-top: 25px;
   width: 600px;
-  height: 400px;
-  background-color: #eee;
+  height: auto;
+  text-align: center;
+  /* background-color: #eee; */
 }
-.artic-img img {
+.artic-img svg {
   width: 100%;
+  height: 100%;
+}
+.artic-organ-research .artic-img svg {
+  width: 70%;
+  margin: 20px auto;
 }
 
 /* ---- BUSINESS_CONTENT page ---- */
@@ -905,6 +911,10 @@ span > b {
   .company-organization .artic-img {
     width: 100%;
     height: 260px;
+  }
+  .artic-organ-research .artic-img svg {
+    width: 90%;
+    margin: 10px auto;
   }
 
   /*  BUSINESS CONTENT page 480px  */
