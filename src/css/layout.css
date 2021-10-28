@@ -176,9 +176,13 @@ address {
 /*  MODAL wrap  */
 #modal {
   /* display: none; */
-  position: relative;
+  /* position: relative; */
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
+  z-index: 250;
 }
 #modal > .modal-bg {
   position: absolute;
@@ -194,27 +198,153 @@ address {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  height: 80vh;
-  background-color: lightgrey;
+  height: 90vh;
+  /* background-color: lightgrey; */
+  background-color: #fff;
 }
 
 #personalPolicy-modal > .modal-title,
 #personalPolicy-modal > .modal-inner {
   width: 100%;
-  max-width: 860px;
+  max-width: 780px;
   margin: 0 auto;
 }
 #personalPolicy-modal > .modal-title {
-  height: 50px;
+  position: relative;
+  width: 100%;
+  padding-top: 15px;
+  /* margin-bottom: 20px; */
+  /* border-bottom: 1px solid #eee; */
+}
+#personalPolicy-modal > .modal-title > h3 {
+  /* display: inline-block; */
+  /* height: 50px; */
+  /* margin-left: 320px; */
+  line-height: 75px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+#personalPolicy-modal > .modal-title > .modal-cls {
+  /* float: right; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 75px;
+  z-index: 251;
+}
+#personalPolicy-modal > .modal-title > .modal-cls > button {
+  margin-top: 28px;
+}
+#personalPolicy-modal > .modal-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  z-index: 251;
 }
 #personalPolicy-modal > .modal-inner {
-  height: calc(100% - 70px);
-  background-color: rosybrown;
+  position: relative;
+  height: calc(100% - 120px);
+  /* margin-right: -16px; */
+  /* background-color: rgba(188, 143, 143, 0.13); */
+  background-color: #fff;
+  overflow: hidden;
+}
+#personalPolicy-modal > .modal-inner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+  z-index: 251;
 }
 #personalPolicy-modal .modal-content {
   width: 100%;
   height: 100%;
+  padding: 20px 0 20px 18px;
   overflow-y: scroll;
+  line-height: 1.4;
+}
+
+.modal-content > .sheet-header {
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+.modal-content > .sheet-header > p {
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 8px;
+}
+.modal-content > .sheet-header > p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.sheet-wrap {
+  margin-bottom: 28px;
+}
+.sheet-title-wrap {
+  margin-bottom: 14px;
+}
+.sheet-title-wrap > .sheet-title {
+  font-size: 17px;
+  font-weight: 600;
+}
+.sheet-title-wrap > .sheet-title-sub {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.sheet-content {
+  position: relative;
+  font-size: 15px;
+}
+.sheet-content .para-cont {
+  position: relative;
+}
+.sheet-content .para-cont > em {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sheet-content .para-cont > span {
+  display: inline-block;
+  margin-left: 18px;
+  margin-bottom: 8px;
+}
+.sheet-content .para-cont-sub {
+}
+.sheet-content .para-cont-sub > span {
+  display: inline-block;
+  position: relative;
+  padding-left: 8px;
+  margin-left: 16px;
+}
+.sheet-content .para-cont-sub > span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 4px;
+  height: 1px;
+  background-color: #333;
 }
 
 @media all and (max-width: 1024px) {
