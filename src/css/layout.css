@@ -276,7 +276,7 @@ address {
 
 .modal-content > .sheet-header {
   font-size: 15px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 .modal-content > .sheet-header > p {
   position: relative;
@@ -296,23 +296,28 @@ address {
 }
 
 .sheet-wrap {
-  margin-bottom: 28px;
+  margin-bottom: 36px;
 }
 .sheet-title-wrap {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 .sheet-title-wrap > .sheet-title {
   font-size: 17px;
   font-weight: 600;
 }
 .sheet-title-wrap > .sheet-title-sub {
-  margin-top: 8px;
+  margin-top: 6px;
   font-size: 15px;
 }
 
 .sheet-content {
   position: relative;
+  padding-left: 16px;
   font-size: 15px;
+  color: #444;
+}
+.sheet-content > .para-item {
+  margin-bottom: 10px;
 }
 .sheet-content .para-cont {
   position: relative;
@@ -326,14 +331,19 @@ address {
 .sheet-content .para-cont > span {
   display: inline-block;
   margin-left: 18px;
-  margin-bottom: 8px;
 }
 .sheet-content .para-cont-sub {
+  margin-top: 6px;
+  margin-left: 0px;
+}
+.sheet-content .para-cont-sub > em {
+  display: block;
 }
 .sheet-content .para-cont-sub > span {
-  display: inline-block;
+  display: block;
   position: relative;
   padding-left: 8px;
+  margin-bottom: 6px;
   margin-left: 16px;
 }
 .sheet-content .para-cont-sub > span::before {
@@ -345,6 +355,21 @@ address {
   width: 4px;
   height: 1px;
   background-color: #333;
+}
+.sheet-content .para-cont-sub > span > em {
+  display: block;
+  margin-left: 8px;
+}
+.sheet-content .para-cont-sub > span > em:first-child {
+  margin-top: 4px;
+}
+.sheet-footer {
+  text-align: right;
+  padding-right: 16px;
+  margin-bottom: 50px;
+}
+.sheet-footer > p {
+  margin-bottom: 6px;
 }
 
 @media all and (max-width: 1024px) {
