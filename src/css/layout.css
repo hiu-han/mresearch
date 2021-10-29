@@ -175,7 +175,7 @@ address {
 
 /*  MODAL wrap  */
 #modal {
-  /* display: none; */
+  display: none;
   /* position: relative; */
   position: fixed;
   top: 0;
