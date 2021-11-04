@@ -266,11 +266,12 @@ span > b {
 .content-item > article .info-item > span {
   width: 80%;
   font-weight: 400;
+  color: #616161;
 }
 
 .history-box {
   width: 100%;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 .history-box:last-child {
   padding-bottom: 30px;
@@ -308,7 +309,7 @@ span > b {
 .history-explain .history-text > span {
   display: inline-block;
   width: 100%;
-  padding-top: 8px;
+  padding-top: 6px;
   font-size: 16px;
   color: #616161;
 }
@@ -453,6 +454,9 @@ span > b {
   width: 32%;
   height: 152px;
   background-color: #eee;
+}
+.artic-qualitative .artic-img-box > em > img {
+  width: 100%;
 }
 .artic-img-inner:first-child {
   margin-bottom: 30px;
