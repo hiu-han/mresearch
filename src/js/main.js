@@ -91,6 +91,47 @@ $(document).ready(function () {
   }
   recruitInfoHandler();
 
+  const MODALON_CLASSNAME = "modalOn";
+
+  const modalPkg = document.querySelector("#modal");
+  const modalBg = document.querySelector(".modal-bg");
+
+  const personalPolicyBtn = document.querySelector("#personalPolicyBtn");
+  const personalPolicyOffBtn = document.querySelector("#personalPolicyCls");
+
+  const sModalHandler = {
+    personalPolicyOn: function () {
+      // modalPkg.style.setProperty("display", "block");
+      // modalPkg.style.display = "block";
+      modalPkg.classList.add(MODALON_CLASSNAME);
+    },
+    personalPolicyOff: function () {
+      modalPkg.classList.remove(MODALON_CLASSNAME);
+    },
+    preventScroll: function () {
+      modalBg.addEventListener("scroll, touchmove, mousewheel", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+      });
+    },
+    releaseScroll: function () {
+      modalBg.removeEventListener("scroll, touchmove, mousewheel")
+    }
+  };
   
-  
+  personalPolicyBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    sModalHandler.personalPolicyOn();
+    sModalHandler.preventScroll();
+    // personalPolicyOn();
+  });
+  personalPolicyOffBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    sModalHandler.personalPolicyOff();
+    sModalHandler.releaseScroll();
+  });
+
 })
