@@ -23,23 +23,24 @@ $(document).ready(function () {
       if ($(".ham-btn").hasClass(NOWON_CLASSNAME)) {
         $(".ham-btn").on("click", function() {
           $(".sub-menu").css("height", "0");
-        })
+        });
 
         $("nav").on("scroll touchmove mousewheel", function (event) {
           event.preventDefault();
           event.stopPropagation();
           return false;
-        })
-      } else {
-        $("nav").off("svroll touchmove mousewheel");
+        });
       }
-    })
-  }
+      else {
+        $("nav").off("scroll touchmove mousewheel");
+      };
+    });
+  };
   
   function init() {
     subOpener();
     mobileNavOn();
-  }
+  };
 
   init();
 
@@ -95,50 +96,26 @@ $(document).ready(function () {
   // MODAL EVENT
   const MODALON_CLASSNAME = "modalOn";
 
-  const modalPkg = document.querySelector("#modal");
-  const modalBg = document.querySelector(".modal-bg");
+  const modalPkg = $("#modal");
+  const modalBg = $(".modal-bg");
 
-  const personalPolicyBtn = document.querySelector("#personalPolicyBtn");
-  const personalPolicyOffBtn = document.querySelector("#personalPolicyCls");
+  const personalPolicyBtn = $("#personalPolicyBtn");
+  const personalPolicyOffBtn = $("#personalPolicyCls");
 
   const sModalHandler = {
     modalWrapOn: function () {
-      // modalPkg.style.setProperty("display", "block");
-      // modalPkg.style.display = "block";
-      modalPkg.classList.add(MODALON_CLASSNAME);
+      modalPkg.addClass(MODALON_CLASSNAME);
       $('html').css("overflow", "hidden");
       $(modalBg).on("scroll touchmove mousewheel", function (e) {
         e.preventDefault();
         e.stopPropagation();
         return false;
       });
-      /*
-      modalBg.addEventListener("scroll", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-      });
-      modalBg.addEventListener("touchmove", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-      });
-      modalBg.addEventListener("mousewheel", function(e) {
-        e.preventDefault();
-        e.stupPropagation();
-        return false;
-      });
-      */
     },
     modalWrapOff: function () {
-      modalPkg.classList.remove(MODALON_CLASSNAME);
+      modalPkg.removeClass(MODALON_CLASSNAME);
       $('html').css("overflow", "scroll");
       $(modalBg).off("scroll touchmove mousewheel");
-      /*
-      modalBg.removeEventListener("scroll");
-      modalBg.removeEventListener("touchmove");
-      modalBg.removeEventListener("mousewheel");
-      */
     },
     personalPolicyOn: function () {
       document.querySelector("#personalPolicy-modal").classList.add(MODALON_CLASSNAME);
@@ -146,26 +123,20 @@ $(document).ready(function () {
     personalPolicyOff: function () {
       document.querySelector("#personalPolicy-modal").classList.remove(MODALON_CLASSNAME);
     },
-    preventScroll: function () {
-    },
-    releaseScroll: function () {
-    }
   };
   
-  personalPolicyBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-    e.stopPropagation();
+  $(personalPolicyBtn).on("click", function () {
+    // e.preventDefault();
+    // e.stopPropagation();
     sModalHandler.modalWrapOn();
     sModalHandler.personalPolicyOn();
-    // sModalHandler.preventScroll();
-    // personalPolicyOn();
   });
-  personalPolicyOffBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-    e.stopPropagation();
+  $(personalPolicyOffBtn).on("click", function () {
+    // e.preventDefault();
+    // e.stopPropagation();
     sModalHandler.modalWrapOff();
     sModalHandler.personalPolicyOff();
-    // sModalHandler.releaseScroll();
   });
 
 })
+
