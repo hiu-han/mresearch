@@ -591,6 +591,12 @@ span > b {
   height: 670px;
   background-color: #eee;
 }
+.content-item-map .map-area {
+  height: 100%;
+}
+.map-area .map {
+  height: 100%;
+}
 
 #contactPage .desc-list-bus .add-hyphen > p {
   margin-bottom: 10px;
