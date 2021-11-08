@@ -336,6 +336,7 @@ section.site-news {
     top: 45%;
   }
   .artic-banner .banner-title {
+    width: 84%;
     font-size: 26px;
     word-break: keep-all;
   }
