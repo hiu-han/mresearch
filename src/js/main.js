@@ -109,9 +109,9 @@ $(document).ready(function () {
       fadeBanner();
     });
   }
-  // mBannerHandler();
+  mBannerHandler();
 
-  setInterval(fadeBanner, 1000);
+  // setInterval(fadeBanner, 1000);
   /* -- 메인배너 핸들러 엔드 -- */
 
 
