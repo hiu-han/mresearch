@@ -51,7 +51,7 @@ $(document).ready(function () {
 
     // 배너 페이드
     const fadeBanner = () => {
-      $(".banner-item").eq(showBanner).fadeIn(1000).siblings().fadeOut(1000);
+      $(".banner-item").eq(showBanner).fadeIn(2000).siblings().fadeOut(2000);
 
       if (showBanner == 2) {
         $(".banner-btn").eq(2).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
@@ -66,7 +66,7 @@ $(document).ready(function () {
       } else {
         showBanner = 0;
       }
-      $(".banner-item").eq(showBanner).fadeIn(1000).siblings().fadeOut(1000);
+      $(".banner-item").eq(showBanner).fadeIn(2000).siblings().fadeOut(2000);
       $(".banner-btn").eq(showBanner).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
     }
     var bannerTimer = setInterval(autoFadeBanner, 5000);
