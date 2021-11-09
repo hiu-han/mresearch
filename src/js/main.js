@@ -51,7 +51,7 @@ $(document).ready(function () {
 
     // 배너 페이드
     const fadeBanner = () => {
-      $(".banner-item").eq(showBanner).fadeIn(2000).siblings().fadeOut(2000);
+      $(".banner-item").eq(showBanner).fadeIn(1600).siblings().fadeOut(1600);
 
       if (showBanner == 2) {
         $(".banner-btn").eq(2).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
@@ -66,10 +66,10 @@ $(document).ready(function () {
       } else {
         showBanner = 0;
       }
-      $(".banner-item").eq(showBanner).fadeIn(2000).siblings().fadeOut(2000);
+      $(".banner-item").eq(showBanner).fadeIn(1600).siblings().fadeOut(1600);
       $(".banner-btn").eq(showBanner).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
     }
-    var bannerTimer = setInterval(autoFadeBanner, 5000);
+    var bannerTimer = setInterval(autoFadeBanner, 6000);
 
     $(".banner-btn-list").on("mouseover", function () {
       clearInterval(bannerTimer);
@@ -78,10 +78,10 @@ $(document).ready(function () {
       clearInterval(bannerTimer);
     });
     $(".banner-btn-list").on("mouseout", function () {
-      bannerTimer = setInterval(autoFadeBanner, 5000);
+      bannerTimer = setInterval(autoFadeBanner, 6000);
     });
     $(".btn-arrow-wrap").on("mouseout", function () {
-      bannerTimer = setInterval(autoFadeBanner, 5000);
+      bannerTimer = setInterval(autoFadeBanner, 6000);
     });
 
     // 하단 버튼 컨트롤
@@ -109,9 +109,9 @@ $(document).ready(function () {
       fadeBanner();
     });
   }
-  mBannerHandler();
+  // mBannerHandler();
 
-  // setInterval(fadeBanner, 1000);
+  setInterval(fadeBanner, 1000);
   /* -- 메인배너 핸들러 엔드 -- */
 
 
