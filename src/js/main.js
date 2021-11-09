@@ -44,29 +44,76 @@ $(document).ready(function () {
 
   init();
 
-  // onPC MAIN BANNER
-  function mainBannerHandler() {
-    const $bannerFir = $(".banner-item").eq(0),
-          $bannerSec = $(".banner-item").eq(1),
-          $bannerThr = $(".banner-item").eq(2);
-    const $bannerBtnFir = $(".banner-btn").eq(0),
-          $bannerBtnSec = $(".banner-btn").eq(1),
-          $bannerBtnThr = $(".banner-btn").eq(2);
 
-    $bannerBtnFir.on("click", function () {
-      $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
-      $bannerFir.fadeIn().siblings().fadeOut("slow");
-    })
-    $bannerBtnSec.on("click", function () {
-      $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
-      $bannerSec.fadeIn().siblings().fadeOut("slow");
-    })
-    $bannerBtnThr.on("click", function () {
-      $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
-      $bannerThr.fadeIn().siblings().fadeOut("slow");
-    })
+  /* -- 메인배너 핸들러 -- */
+  function mBannerHandler() {
+    let showBanner = 0;
+
+    // 배너 페이드
+    const fadeBanner = () => {
+      $(".banner-item").eq(showBanner).fadeIn(1000).siblings().fadeOut(1000);
+
+      if (showBanner == 2) {
+        $(".banner-btn").eq(2).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+      } else {
+        $(".banner-btn").eq(showBanner).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+      }
+    };
+
+    const autoFadeBanner = () => {
+      if (showBanner < 2) {
+        showBanner ++;
+      } else {
+        showBanner = 0;
+      }
+      $(".banner-item").eq(showBanner).fadeIn(1000).siblings().fadeOut(1000);
+      $(".banner-btn").eq(showBanner).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+    }
+    var bannerTimer = setInterval(autoFadeBanner, 5000);
+
+    $(".banner-btn-list").on("mouseover", function () {
+      clearInterval(bannerTimer);
+    });
+    $(".btn-arrow-wrap").on("mouseover", function () {
+      clearInterval(bannerTimer);
+    });
+    $(".banner-btn-list").on("mouseout", function () {
+      bannerTimer = setInterval(autoFadeBanner, 5000);
+    });
+    $(".btn-arrow-wrap").on("mouseout", function () {
+      bannerTimer = setInterval(autoFadeBanner, 5000);
+    });
+
+    // 하단 버튼 컨트롤
+    $(".banner-btn").on("click", function () {
+      showBanner = $(this).index();
+      fadeBanner();
+      // autoFadeBanner();
+    });
+
+    // arrow 버튼 컨트롤 - left
+    $(".arrow-prev").on("click", function () {
+      if(showBanner == 0) {
+        showBanner = 3;
+      }
+      showBanner --;
+      fadeBanner();
+    });
+
+    // arrow 버튼 컨트롤 - right
+    $(".arrow-next").on("click", function () {
+      if(showBanner == 2) {
+        showBanner = -1;
+      }
+      showBanner ++;
+      fadeBanner();
+    });
   }
-  mainBannerHandler();
+  mBannerHandler();
+
+  // setInterval(fadeBanner, 1000);
+  /* -- 메인배너 핸들러 엔드 -- */
+
 
   // onMobile RECRUIT page > 인재채용 정보 이벤트
   function recruitInfoHandler() {
@@ -93,50 +140,6 @@ $(document).ready(function () {
   recruitInfoHandler();
 
 
-  // MODAL EVENT
-  const MODALON_CLASSNAME = "modalOn";
-
-  const modalPkg = $("#modal");
-  const modalBg = $(".modal-bg");
-
-  const personalPolicyBtn = $("#personalPolicyBtn");
-  const personalPolicyOffBtn = $("#personalPolicyCls");
-
-  const sModalHandler = {
-    modalWrapOn: function () {
-      modalPkg.addClass(MODALON_CLASSNAME);
-      $('html').css("overflow", "hidden");
-      $(modalBg).on("scroll touchmove mousewheel", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-      });
-    },
-    modalWrapOff: function () {
-      modalPkg.removeClass(MODALON_CLASSNAME);
-      $('html').css("overflow", "scroll");
-      $(modalBg).off("scroll touchmove mousewheel");
-    },
-    personalPolicyOn: function () {
-      document.querySelector("#personalPolicy-modal").classList.add(MODALON_CLASSNAME);
-    },
-    personalPolicyOff: function () {
-      document.querySelector("#personalPolicy-modal").classList.remove(MODALON_CLASSNAME);
-    },
-  };
   
-  $(personalPolicyBtn).on("click", function () {
-    // e.preventDefault();
-    // e.stopPropagation();
-    sModalHandler.modalWrapOn();
-    sModalHandler.personalPolicyOn();
-  });
-  $(personalPolicyOffBtn).on("click", function () {
-    // e.preventDefault();
-    // e.stopPropagation();
-    sModalHandler.modalWrapOff();
-    sModalHandler.personalPolicyOff();
-  });
-
 })
 

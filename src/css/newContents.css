@@ -51,6 +51,9 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+#noticePage .thumb-item:hover .thumb-title {
+  text-decoration: underline;
+}
 #noticePage .thumb-date {
   margin-top: 8px;
   font-size: 12px;

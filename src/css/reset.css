@@ -149,3 +149,31 @@ button {
 button {
   background-color: none;
 }
+
+/** TEST style **/
+.test-lines {
+  width: 500px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.line01 {
+  border-top: 3px solid #1e4d9b;
+  background-color: #bfcee6;
+}
+.line02 {
+  border-top: 3px solid #d93a35;
+  background-color: #f7cbca;
+}
+.line03 {
+  border-top: 3px solid #f7cc46;
+  background-color: #eeeadc;
+}
+.line04 {
+  border-top: 3px solid #ce5f2c;
+  background-color: #fad0bd;
+}
+.line05 {
+  border-top: 3px solid #999;
+  background-color: #dfdfdf;
+}
