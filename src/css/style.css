@@ -645,6 +645,11 @@ span > b {
   margin-left: 14px;
 }
 
+#map {
+  width: 380px;
+  height: 670px;
+}
+
 /* ---- RECRUIT page ---- */
 .table-recruit {
   width: 100%;
@@ -699,7 +704,8 @@ span > b {
 
   .sec-content {
     float: none;
-    width: 96%;
+    width: 100%;
+    /* width: 96%; */
     margin: 25px auto 0;
   }
   #contactPage .sec-content {
@@ -710,12 +716,22 @@ span > b {
   }
 
   /*  CONTACT page  */
+  #contactPage .sec-content {
+    margin-top: 24px;
+  }
   .content-item-map {
     position: relative;
     top: 0;
     left: 0;
+    /* width: 100%; */
+    width: calc(100% + 14px);
+    height: 540px;
+    margin-left: -7px;
+    margin-top: 10px !important;
+  }
+  #map {
     width: 100%;
-    height: 360px;
+    height: 540px;
   }
 
   /*  RECRUIT page  */

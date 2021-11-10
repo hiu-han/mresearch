@@ -43,5 +43,9 @@ $(document).ready(function () {
     sModalHandler.modalWrapOff();
     sModalHandler.personalPolicyOff();
   });
+  $(modalBg).on("click", function () {
+    sModalHandler.modalWrapOff();
+    sModalHandler.personalPolicyOff();
+  })
   /*  모달 핸들러 엔드  */
 })

@@ -117,8 +117,8 @@
 #pressPage .thumb-item {
   display: inline-block;
   width: 33.33333%;
-  padding: 15px;
-  margin-bottom: 30px;
+  padding: 0 15px;
+  margin-bottom: 55px;
   font-size: 1rem;
   box-sizing: border-box;
   vertical-align: top;
@@ -273,8 +273,20 @@
   }
 
   /*  PRESS page 768px  */
+  #pressPage .thumb-item {
+    padding: 0 12px;
+  }
   #pressPage .thumb-img-wrap {
     height: 120px;
+  }
+  #pressPage .thumb-info-wrap .thumb-title {
+    font-size: 15px;
+  }
+  #pressPage .thumb-info-wrap .thumb-content {
+    margin-top: 6px;
+  }
+  #pressPage .thumb-info-wrap .thumb-date {
+    margin-top: 8px;
   }
 }
 

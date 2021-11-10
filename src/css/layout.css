@@ -219,6 +219,7 @@ address {
 }
 #modal > #personalPolicy-modal.modalOn {
   top: 0;
+  transition: 0.4s;
 }
 
 #personalPolicy-modal > .modal-title,
