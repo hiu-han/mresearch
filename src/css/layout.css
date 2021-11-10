@@ -24,6 +24,9 @@ section .container {
 .mode-pc {
   display: block;
 }
+.mode-ta {
+  display: none;
+}
 .mode-mo {
   display: none;
 }

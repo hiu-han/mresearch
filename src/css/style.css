@@ -496,6 +496,16 @@ span > b {
   height: 150px;
   background-color: #eee;
 }
+.artic-img-partnership-panel {
+  width: 100%;
+  margin-top: 20px;
+}
+.artic-img-partnership-panel .img-box {
+  display: inline-block;
+  width: 100%;
+  height: 150px;
+  background-color: #eee;
+}
 
 .artic-desc-online-process {
   width: 100%;
