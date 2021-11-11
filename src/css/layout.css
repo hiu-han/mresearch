@@ -553,6 +553,15 @@ address {
   .foot-menu-item > a {
     line-height: 1.8;
   }
+
+  /** MODALWRAP **/
+  #personalPolicy-modal .modal-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #personalPolicy-modal > .modal-title > .modal-cls {
+    right: 20px;
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -646,5 +655,13 @@ address {
   .foot-menu-item > a {
     line-height: 1.6;
     font-size: 13px;
+  }
+
+  /** MODALWRAP **/
+  #personalPolicy-modal .modal-content {
+    width: 100%;
+  }
+  #personalPolicy-modal > .modal-title > .modal-cls {
+    right: 16px;
   }
 }
