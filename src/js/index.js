@@ -84,5 +84,8 @@ $(document).ready(function () {
   /* -- 메인배너 핸들러 엔드 -- */
 
   /* -- MORE btn 링크 -- */
+  // const superLinkHandler = {
+  //   more
+  // }
 
 })

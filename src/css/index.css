@@ -284,13 +284,17 @@ section.site-news {
 
 @media all and (max-width: 768px) {
   /*  MAIN-BANNER 768px  */
+  .artic-banner .banner-title-wrap {
+    top: 42%;
+  }
   .banner-title-wrap.mode-pc {
     display: none;
   }
   .artic-banner .banner-title {
-    font-size: 38px;
+    font-size: 34px;
   }
   .artic-banner .banner-title-sub {
+    margin: 15px auto 20px;
     font-size: 18px;
     font-weight: 300;
   }
@@ -299,7 +303,6 @@ section.site-news {
     /* top: 60%; */
     /* left: 50%; */
     /* transform: translateX(-50%); */
-    padding-top: 10px;
   }
   .artic-banner .btn-list-more > button {
     width: 125px;
@@ -364,12 +367,11 @@ section.site-news {
   }
   .artic-banner .banner-title-sub {
     width: 80%;
-    margin: 20px auto 0;
+    margin: 10px auto 15px;
     font-size: 14px;
     word-break: keep-all;
   }
-  .artic-banner .btn-list-more {
-    /* padding-top: 5px; */
+  .artic-banner .btn-wrap {
   }
   .artic-banner .btn-list-more > button {
     width: 84px;
