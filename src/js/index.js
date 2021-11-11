@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     // 배너 페이드
     const fadeBanner = () => {
-      $(".banner-item").eq(showBanner).fadeIn(1500).siblings().fadeOut(1000);
+      $(".banner-item").eq(showBanner).fadeIn(1300).siblings().fadeOut(800);
 
       if (showBanner == 2) {
         $(".banner-btn").eq(2).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
@@ -23,7 +23,7 @@ $(document).ready(function () {
       } else {
         showBanner = 0;
       }
-      $(".banner-item").eq(showBanner).fadeIn(1500).siblings().fadeOut(1000);
+      $(".banner-item").eq(showBanner).fadeIn(1300).siblings().fadeOut(800);
       $(".banner-btn").eq(showBanner).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
     }
     var bannerTimer = setInterval(autoFadeBanner, 6000);
@@ -80,8 +80,9 @@ $(document).ready(function () {
   }
   mBannerHandler();
   
-
   // setInterval(fadeBanner, 1000);
   /* -- 메인배너 핸들러 엔드 -- */
+
+  /* -- MORE btn 링크 -- */
 
 })
