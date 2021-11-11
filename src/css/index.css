@@ -285,7 +285,7 @@ section.site-news {
 @media all and (max-width: 768px) {
   /*  MAIN-BANNER 768px  */
   .artic-banner .banner-title-wrap {
-    top: 42%;
+    /* top: 42%; */
   }
   .banner-title-wrap.mode-pc {
     display: none;
@@ -328,6 +328,7 @@ section.site-news {
   .main-banner .btn-arrow-wrap {
     /* display: none; */
     width: 96%;
+    top: 36%;
   }
 
   /*  QUICK CONTENT 768px  */
