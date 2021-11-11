@@ -556,11 +556,11 @@ address {
 
   /** MODALWRAP **/
   #personalPolicy-modal .modal-content {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
   }
   #personalPolicy-modal > .modal-title > .modal-cls {
-    right: 20px;
+    right: 8%;
   }
 }
 
