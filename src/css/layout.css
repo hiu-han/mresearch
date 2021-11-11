@@ -61,7 +61,7 @@ header .inner {
   transform: translateY(-50%);
 }
 #mainHeader header .inner {
-  background-color: rgba(251, 251, 251, 0.15);
+  background-color: rgba(251, 251, 251, 0.1);
   color: #fff;
 }
 
@@ -113,7 +113,7 @@ nav {
   z-index: 210;
 }
 #mainHeader .sub-menu {
-  background-color: rgba(251, 251, 251, 0.15);
+  background-color: rgba(251, 251, 251, 0.1);
 }
 .sub-menu > .sub-item:first-child {
   margin-top: 10px;
