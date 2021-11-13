@@ -538,6 +538,13 @@ address {
     padding-top: 0px;
   }
 
+  section:last-child {
+    padding-bottom: 0;
+  }
+  section:last-child .container {
+    padding-bottom: 40px;
+  }
+
   /*  FOOTER 769px  */
   footer > .foot-inner {
     height: auto;
@@ -571,10 +578,6 @@ address {
   }
   .mode-mo {
     display: block;
-  }
-
-  section:last-child {
-    padding-bottom: 0;
   }
 
   .container,

@@ -288,6 +288,10 @@
   #pressPage .thumb-info-wrap .thumb-date {
     margin-top: 8px;
   }
+
+  .btn-back-list.mode-pc {
+    display: none;
+  }
 }
 
 @media all and (max-width: 480px) {
