@@ -733,6 +733,12 @@ span > b {
     width: 96%;
   }
 
+  /*  BUSINESS inspect page 768px  */
+  .artic-img-partnership-panel .svg-wrap {
+    width: 30%;
+    margin: 0 1.2%;
+  }
+
   /*  CONTACT page 768px  */
   #contactPage .sec-content {
     margin-top: 24px;
@@ -1015,10 +1021,6 @@ span > b {
 
   .artic-img-partnership-panel {
     margin: 0px auto;
-  }
-  .artic-img-partnership-panel .svg-wrap {
-    width: 30%;
-    margin: 0 1.2%;
   }
 
   /*  BUSINESS QUALITY page 480px  */
