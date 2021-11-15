@@ -486,25 +486,25 @@ span > b {
 .artic-img-online-panel {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin-top: 20px;
+  width: 80%;
+  margin: 35px auto 60px;
   font-size: 0;
 }
-.artic-img-online-panel .img-box {
+.artic-img-online-panel .svg-wrap {
   display: inline-block;
   width: 48%;
   height: 150px;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 .artic-img-partnership-panel {
   width: 100%;
-  margin-top: 20px;
+  margin: 35px auto 0px;
 }
-.artic-img-partnership-panel .img-box {
+.artic-img-partnership-panel .svg-wrap {
   display: inline-block;
-  width: 100%;
+  width: 33%;
   height: 150px;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 .artic-desc-online-process {
@@ -725,7 +725,7 @@ span > b {
     width: 96%;
   }
 
-  /*  CONTACT page  */
+  /*  CONTACT page 768px  */
   #contactPage .sec-content {
     margin-top: 24px;
   }
@@ -744,7 +744,7 @@ span > b {
     height: 540px;
   }
 
-  /*  RECRUIT page  */
+  /*  RECRUIT page 768px  */
   .svg-recruit svg {
     width: 100%;
   }
@@ -998,6 +998,19 @@ span > b {
   }
   .artic-desc .desc-list-wrap .desc-list {
     margin-bottom: 30px;
+  }
+
+  .artic-img-online-panel {
+    width: 90%;
+    margin: 0px auto 30px;
+  }
+
+  .artic-img-partnership-panel {
+    margin: 0px auto;
+  }
+  .artic-img-partnership-panel .svg-wrap {
+    width: 30%;
+    margin: 0 1.2%;
   }
 
   /*  BUSINESS QUALITY page 480px  */
