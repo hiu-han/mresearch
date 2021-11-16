@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
   const NOWON_CLASSNAME = "now-on";
+  const ISOPEN_CLASSNAME = "is-open";
 
   // gnb > sub opener
   function subOpener() {
@@ -10,7 +11,7 @@ $(document).ready(function () {
     $(".menu-item").on("mouseleave", function() {
       $(this).children(".sub-menu").css("height", "0");
     })
-  }
+  };
 
   // max 768 > nav on {
   function mobileNavOn() {

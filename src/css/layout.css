@@ -94,8 +94,14 @@ nav {
 #header .gnb > .menu-item > a:hover {
   color: #2a2a2a;
 }
+#header .gnb > .menu-item-business:hover > a {
+  color: #2a2a2a;
+}
 
 #mainHeader .gnb > .menu-item > a:hover {
+  color: #dfdfdf;
+}
+#mainHeader .gnb > .menu-item-business:hover > a {
   color: #dfdfdf;
 }
 
