@@ -12,7 +12,7 @@ $(document).ready(function () {
     })
   };
 
-  // max 768 > nav on {
+  // max 768 > nav on
   function mobileNavHandler() {
     $(".ham-btn").on("click", function() {
       let subHeight = $(".sub-menu").outerHeight();
