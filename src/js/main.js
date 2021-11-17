@@ -14,33 +14,43 @@ $(document).ready(function () {
   };
 
   // max 768 > nav on {
-  function mobileNavOn() {
+  function mobileNavHandler() {
     $(".ham-btn").on("click", function() {
       let subHeight = $(".sub-menu").outerHeight();
-      $(this).siblings("nav").fadeToggle();
-      $(this).siblings("nav").children(".gnb").slideToggle(300, "swing");
+      $(this).siblings(".m-nav").fadeToggle();
+      $(this).siblings(".m-nav").children(".m-gnb").slideToggle(300, "swing");
       $(this).toggleClass(NOWON_CLASSNAME);
 
-      if ($(".ham-btn").hasClass(NOWON_CLASSNAME)) {
-        $(".ham-btn").on("click", function() {
-          $(".sub-menu").css("height", "0");
-        });
+      $(".m-gnb").children(".menu-item").on("click", function () {
+        // $(this).children(".sub-menu").css("height", "auto");
+        $(this).children(".sub-menu").stop().slideToggle(300, "swing");
+      })
 
-        $("nav").on("scroll touchmove mousewheel", function (event) {
+      if ($(".ham-btn").hasClass(NOWON_CLASSNAME)) {
+        // $(".ham-btn").on("click", function() {
+        //   $(".sub-menu").css("height", "0");
+        // });
+
+        $(".m-nav").on("scroll touchmove mousewheel", function (event) {
           event.preventDefault();
           event.stopPropagation();
           return false;
         });
       }
       else {
-        $("nav").off("scroll touchmove mousewheel");
+        $(".m-nav").off("scroll touchmove mousewheel");
       };
+
+      // $(".m-gnb a").on("click", function () {
+      //   console.log(1);
+      //   $(".sub-menu").css("height", "0");
+      // });
     });
   };
   
   function init() {
     subOpener();
-    mobileNavOn();
+    mobileNavHandler();
   };
 
   init();
