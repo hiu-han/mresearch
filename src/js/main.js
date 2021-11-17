@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
   const NOWON_CLASSNAME = "now-on";
-  const ISOPEN_CLASSNAME = "is-open";
 
   // gnb > sub opener
   function subOpener() {
@@ -22,29 +21,18 @@ $(document).ready(function () {
       $(this).toggleClass(NOWON_CLASSNAME);
 
       $(".m-gnb").children(".menu-item").on("click", function () {
-        // $(this).children(".sub-menu").css("height", "auto");
         $(this).children(".sub-menu").stop().slideToggle(300, "swing");
       })
 
       if ($(".ham-btn").hasClass(NOWON_CLASSNAME)) {
-        // $(".ham-btn").on("click", function() {
-        //   $(".sub-menu").css("height", "0");
-        // });
-
         $(".m-nav").on("scroll touchmove mousewheel", function (event) {
           event.preventDefault();
           event.stopPropagation();
           return false;
         });
-      }
-      else {
+      } else {
         $(".m-nav").off("scroll touchmove mousewheel");
       };
-
-      // $(".m-gnb a").on("click", function () {
-      //   console.log(1);
-      //   $(".sub-menu").css("height", "0");
-      // });
     });
   };
   
@@ -78,8 +66,6 @@ $(document).ready(function () {
     })
   }
   recruitInfoHandler();
-
-
   
 })
 

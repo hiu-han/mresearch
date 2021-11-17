@@ -48,7 +48,7 @@ section .container {
 header {
   position: relative;
   width: 100%;
-  height: 80px;
+  height: 75px;
 }
 header .inner {
   width: 100%;
@@ -79,15 +79,33 @@ nav {
 .gnb > .menu-item {
   display: inline-block;
   position: relative;
-  padding: 0 30px;
+  padding: 0 28px;
   font-size: 1rem;
+}
+.gnb > .menu-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #2d2f91, #8d48b2);
+  transition: all 0.3s;
+}
+#mainHeader .gnb > .menu-item::after {
+  background: rgba(251, 251, 251, 0.7);
+}
+.gnb > .menu-item:hover::after {
+  width: 100%;
 }
 
 .gnb > .menu-item > a {
   display: inline-block;
   width: 100%;
-  line-height: 80px;
-  font-weight: 400;
+  line-height: 75px;
+  font-weight: 500;
   text-align: center;
   color: #aaa;
   transition: 0.25s;
@@ -114,7 +132,7 @@ nav {
   position: absolute;
   width: 100%;
   height: 0;
-  top: 80px;
+  top: 75px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -126,10 +144,10 @@ nav {
   background-color: rgba(251, 251, 251, 0.1);
 }
 .sub-menu > .sub-item:first-child {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .sub-menu > .sub-item:last-child {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .sub-menu > .sub-item > a {
   line-height: 2.2;
