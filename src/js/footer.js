@@ -17,6 +17,8 @@ $(document).ready(function () {
       $body.stop().animate({
         scrollTop: yPos
       },500);
+
+      $(".icon-up").css("color", "#333");
     });
   }
 
