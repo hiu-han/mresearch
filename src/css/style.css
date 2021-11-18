@@ -430,6 +430,9 @@ span > b {
   height: 505px;
   margin-top: 30px;
 }
+.artic-interview .artic-img > img {
+  width: 100%;
+}
 .artic-interview .artic-img > svg {
   width: 100%;
 }
@@ -515,7 +518,14 @@ span > b {
   display: inline-block;
   width: 33%;
   height: 150px;
+  /* padding: 0 30px; */
+  box-sizing: border-box;
   /* background-color: #eee; */
+  text-align: center;
+}
+.artic-img-partnership-panel .svg-wrap > img {
+  height: 100%;
+  /* width: 100%; */
 }
 
 .artic-desc-online-process {
@@ -1024,6 +1034,11 @@ span > b {
 
   .artic-img-partnership-panel {
     margin: 0px auto;
+  }
+
+  .artic-img-partnership-panel .svg-wrap > img {
+    height: auto;
+    width: 100%;
   }
 
   /*  BUSINESS QUALITY page 480px  */
