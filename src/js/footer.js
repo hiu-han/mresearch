@@ -1,4 +1,25 @@
 $(document).ready(function () {
+
+  const $body = $("html, body");
+
+  // 초기 실행 이벤트
+  function footInit() {
+    goTopEvent();
+  }
+  footInit();
+
+  /*  GO TOP event  */
+  function goTopEvent() {
+    $(".goTop").on("click", function () {
+
+      const yPos = $body.offset().top;
+
+      $body.stop().animate({
+        scrollTop: yPos
+      },500);
+    });
+  }
+
   /*  모달 핸들러  */
   const MODALON_CLASSNAME = "modalOn";
 
@@ -32,14 +53,10 @@ $(document).ready(function () {
   };
   
   $(personalPolicyBtn).on("click", function () {
-    // e.preventDefault();
-    // e.stopPropagation();
     sModalHandler.modalWrapOn();
     sModalHandler.personalPolicyOn();
   });
   $(personalPolicyOffBtn).on("click", function () {
-    // e.preventDefault();
-    // e.stopPropagation();
     sModalHandler.modalWrapOff();
     sModalHandler.personalPolicyOff();
   });
@@ -48,4 +65,5 @@ $(document).ready(function () {
     sModalHandler.personalPolicyOff();
   })
   /*  모달 핸들러 엔드  */
+
 })

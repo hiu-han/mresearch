@@ -204,25 +204,46 @@ address {
   color: #666;
 }
 
+/*  FOOTFIX  */
+.goTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.goTop > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 3px rgba(120, 120, 120, 0.1);
+}
+.goTop .icon-up {
+  line-height: 41px;
+  font-size: 18px;
+}
+.goTop:hover .icon-up {
+  color: #2d2f91;
+}
+
 /*  MODAL wrap  */
 #modal {
-  /* display: none; */
-  /* position: relative; */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 100vh; */
   height: 0;
   z-index: 250;
-  /* transition: 0.25s; */
-  /* opacity: 0; */
   overflow: hidden;
 }
 #modal.modalOn {
   display: block;
   height: 100vh;
-  /* opacity: 1; */
 }
 #modal > .modal-bg {
   position: absolute;
@@ -598,7 +619,13 @@ address {
     line-height: 1.8;
   }
 
-  /** MODALWRAP **/
+  /*  FOOTFIX 768px  */
+  .goTop {
+    bottom: 40px;
+    right: 30px;
+  }
+
+  /** MODALWRAP 768px **/
   #personalPolicy-modal .modal-content {
     width: 85%;
     margin: 0 auto;
@@ -695,6 +722,18 @@ address {
   .foot-menu-item > a {
     line-height: 1.6;
     font-size: 13px;
+  }
+
+  /*  FOOTFIX 480px  */
+  .goTop {
+    bottom: 65px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+  }
+  .goTop .icon-up {
+    line-height: 37px;
+    font-size: 17px;
   }
 
   /** MODALWRAP **/
