@@ -342,7 +342,6 @@ span > b {
   width: 600px;
   height: auto;
   text-align: center;
-  /* background-color: #eee; */
 }
 .artic-img svg {
   width: 100%;
@@ -500,11 +499,9 @@ span > b {
   display: inline-block;
   width: 48%;
   height: 150px;
-  /* background-color: #eee; */
   transition: 0.4s;
 }
 .artic-img-online-panel .svg-wrap:hover {
-  /* transform: scale(1.08, 1.08); */
   opacity: 0.85;
 }
 .artic-img-online-panel .svg-wrap > svg {
@@ -517,15 +514,12 @@ span > b {
 .artic-img-partnership-panel .svg-wrap {
   display: inline-block;
   width: 33%;
-  height: 150px;
-  /* padding: 0 30px; */
+  height: 145px;
   box-sizing: border-box;
-  /* background-color: #eee; */
   text-align: center;
 }
 .artic-img-partnership-panel .svg-wrap > img {
   height: 100%;
-  /* width: 100%; */
 }
 
 .artic-desc-online-process {
