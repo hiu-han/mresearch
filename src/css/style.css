@@ -498,13 +498,16 @@ span > b {
 .artic-img-online-panel .svg-wrap {
   display: inline-block;
   width: 48%;
-  height: 150px;
+  vertical-align: top;
   transition: 0.4s;
 }
 .artic-img-online-panel .svg-wrap:hover {
   opacity: 0.85;
 }
-.artic-img-online-panel .svg-wrap > svg {
+.artic-img-online-panel .svg-wrap > img {
+  display: inline-block;
+  width: 80%;
+  text-align: center;
   cursor: pointer;
 }
 .artic-img-partnership-panel {
@@ -1025,11 +1028,13 @@ span > b {
     width: 90%;
     margin: 0px auto 30px;
   }
+  .artic-img-online-panel .svg-wrap > img {
+    width: 100%;
+  }
 
   .artic-img-partnership-panel {
     margin: 0px auto;
   }
-
   .artic-img-partnership-panel .svg-wrap > img {
     height: auto;
     width: 100%;
