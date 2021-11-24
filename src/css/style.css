@@ -1038,6 +1038,9 @@ span > b {
   .artic-img-partnership-panel {
     margin: 25px auto 0;
   }
+  .artic-img-partnership-panel .svg-wrap {
+    height: auto;
+  }
   .artic-img-partnership-panel .svg-wrap > img {
     height: auto;
     width: 100%;
