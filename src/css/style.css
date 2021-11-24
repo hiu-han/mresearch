@@ -849,7 +849,8 @@ span > b {
     text-align: center;
     padding-bottom: 14px;
     margin-bottom: 13px;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 600;
     color: #2a2a2a;
     order: 1;
   }
@@ -859,7 +860,7 @@ span > b {
     background-color: #2a2a2a;
   }
   #companyPage .page-title-wrap .page-title {
-    font-size: 24px;
+    font-size: 22px;
   }
   .page-title-wrap .page-desc {
     width: 80vw;
@@ -1003,7 +1004,9 @@ span > b {
 
   /*  BUSINESS INSPECT page 480px  */
   .artic-interview .artic-img {
+    width: calc(100% + 32px);
     height: auto;
+    margin-left: -16px;
   }
   .artic-interview .artic-img > svg {
     height: auto;
@@ -1026,14 +1029,14 @@ span > b {
 
   .artic-img-online-panel {
     width: 90%;
-    margin: 0px auto 30px;
+    margin: 25px auto 30px;
   }
   .artic-img-online-panel .svg-wrap > img {
     width: 100%;
   }
 
   .artic-img-partnership-panel {
-    margin: 0px auto;
+    margin: 25px auto 0;
   }
   .artic-img-partnership-panel .svg-wrap > img {
     height: auto;
