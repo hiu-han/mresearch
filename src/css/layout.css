@@ -82,27 +82,9 @@ nav {
   padding: 0 28px;
   font-size: 1rem;
 }
-.gnb > .menu-item::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0%;
-  height: 2px;
-  background: linear-gradient(90deg, #2d2f91, #8d48b2);
-  transition: all 0.3s;
-}
-#mainHeader .gnb > .menu-item::after {
-  background: rgba(251, 251, 251, 0.7);
-}
-.gnb > .menu-item:hover::after {
-  width: 100%;
-}
-
 .gnb > .menu-item > a {
   display: inline-block;
+  position: relative;
   width: 100%;
   line-height: 75px;
   font-weight: 400;
@@ -110,6 +92,26 @@ nav {
   color: #aaa;
   transition: 0.25s;
 }
+.gnb > .menu-item > a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #2d2f91, #8d48b2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+#mainHeader .gnb > .menu-item > a::after {
+  background: rgba(251, 251, 251, 0.7);
+}
+.gnb > .menu-item:hover > a::after {
+  width: 100%;
+}
+
 #mainHeader .gnb > .menu-item > a {
   color: #fff;
 }
