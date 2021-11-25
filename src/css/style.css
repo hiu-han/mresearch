@@ -271,7 +271,6 @@ span > b {
 
 .history-box {
   width: 100%;
-  /* padding-bottom: 30px; */
 }
 .history-box:last-child {
   padding-bottom: 30px;
@@ -467,9 +466,6 @@ span > b {
   margin-bottom: 30px;
 }
 
-.artic-online .artic-desc .desc-list-wrap {
-  /* margin: 45px 0; */
-}
 .artic-desc .desc-list-wrap .desc-list {
   margin-top: 20px;
 }
@@ -610,7 +606,6 @@ span > b {
 }
 
 /* ---- CONTACT page ---- */
-
 .content-item-map {
   position: absolute;
   top: 65px;
@@ -733,7 +728,6 @@ span > b {
   .sec-content {
     float: none;
     width: 100%;
-    /* width: 96%; */
     margin: 42px auto 0;
   }
   #contactPage .sec-content {
@@ -757,7 +751,6 @@ span > b {
     position: relative;
     top: 0;
     left: 0;
-    /* width: 100%; */
     width: calc(100% + 14px);
     height: 540px;
     margin-left: -7px;
