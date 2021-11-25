@@ -63,6 +63,13 @@ header .inner {
 }
 #mainHeader header .inner {
   background-color: rgba(251, 251, 251, 0.1);
+  /* backdrop-filter: saturate(180%) blur(10px); */
+  /* background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 15%,
+    rgba(0, 0, 0, 0.25) 100%
+  ); */
+  backdrop-filter: blur(10px);
   color: #fff;
 }
 
@@ -144,6 +151,7 @@ nav {
 }
 #mainHeader .sub-menu {
   background-color: rgba(251, 251, 251, 0.1);
+  /* backdrop-filter: blur(10px); */
 }
 .sub-menu > .sub-item:first-child {
   margin-top: 15px;
@@ -253,12 +261,13 @@ address {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0);
+  /* background-color: rgba(0, 0, 0, 0); */
   transition: 0.3s;
   z-index: 300;
 }
 #modal.modalOn > .modal-bg {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(60, 60, 60, 0.4);
+  backdrop-filter: blur(6px);
 }
 #modal > #personalPolicy-modal {
   position: absolute;
