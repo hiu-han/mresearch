@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   const NOWON_CLASSNAME = "now-on";
 
-  /* -- 메인배너 핸들러 -- */
+  /* -- MAINBANNER handler -- */
   function mBannerHandler() {
     let showBanner = 0;
 
@@ -57,7 +57,6 @@ $(document).ready(function () {
     $(".banner-btn").on("click", function () {
       showBanner = $(this).index();
       fadeBanner();
-      // autoFadeBanner();
     });
 
     // arrow 버튼 컨트롤 - left
@@ -79,13 +78,5 @@ $(document).ready(function () {
     });
   }
   mBannerHandler();
-  
-  // setInterval(fadeBanner, 1000);
-  /* -- 메인배너 핸들러 엔드 -- */
-
-  /* -- MORE btn 링크 -- */
-  // const superLinkHandler = {
-  //   more
-  // }
 
 })

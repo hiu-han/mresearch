@@ -22,7 +22,7 @@ $(document).ready(function () {
     });
   }
 
-  /*  모달 핸들러  */
+  /*  MODAL handler  */
   const MODALON_CLASSNAME = "modalOn";
 
   const modalPkg = $("#modal");
@@ -66,6 +66,5 @@ $(document).ready(function () {
     sModalHandler.modalWrapOff();
     sModalHandler.personalPolicyOff();
   })
-  /*  모달 핸들러 엔드  */
 
 })
