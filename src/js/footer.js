@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   const $body = $("html, body");
-  let resizeW = $("html").innerWidth();
+  let winWidth = $("html").innerWidth();
 
   // 초기 실행 이벤트
   function footInit() {
@@ -10,9 +10,10 @@ $(document).ready(function () {
   }
   footInit();
 
+  /* window resize 이벤트 */
   function windowResize() {
     $(window).on("resize", function() {
-      resizeW = $("html").innerWidth();
+      winWidth = $("html").innerWidth();
     })
   }
 
@@ -69,7 +70,7 @@ $(document).ready(function () {
   };
   
   $(personalPolicyBtn).on("click", function () {
-    sModalHandler.modalWrapOn(resizeW);
+    sModalHandler.modalWrapOn(winWidth);
     sModalHandler.personalPolicyOn();
   });
   $(personalPolicyOffBtn).on("click", function () {
