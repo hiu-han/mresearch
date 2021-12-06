@@ -56,6 +56,7 @@
   font-size: 42px;
   font-weight: 600;
   color: #fff;
+  word-break: keep-all;
 }
 .artic-banner .banner-title-sub {
   width: 75%;

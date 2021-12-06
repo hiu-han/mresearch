@@ -203,6 +203,12 @@
   color: rgb(52, 123, 255);
 }
 
+.view-content-inner > .view-content > p::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .view-footer {
   padding-top: 15px;
   border-top: 1px solid #444;
