@@ -380,7 +380,8 @@ section.site-news {
     height: 3px;
   }
   .main-banner .banner-btn > p {
-    font-size: 15px;
+    font-size: 13px;
+    letter-spacing: -0.06rem;
   }
 
   .main-banner .btn-arrow-wrap {
