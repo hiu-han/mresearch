@@ -16,6 +16,9 @@ section:last-child {
   margin: 0 auto;
   box-sizing: border-box;
 }
+.site-news-container {
+  height: auto;
+}
 section .container {
   padding-top: 60px;
   padding-bottom: 60px;
