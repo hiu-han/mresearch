@@ -246,7 +246,7 @@ address {
 
 /*  이미지 배너  */
 #indexFootContent {
-  /* display: none; */
+  display: none;
 }
 #imgOnBanner {
   position: fixed;
