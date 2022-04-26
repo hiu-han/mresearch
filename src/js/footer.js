@@ -31,6 +31,34 @@ $(document).ready(function () {
     });
   }
 
+  /*  이미지 배너 숨기기  */
+  // function hideIndexBanner() {
+  //   $("#imgOnBanner").css("right", "-200px");
+  // }
+  const indexBannerHandler = {
+    hideBanner: function () {
+      // $("#imgOnBanner").css("right", "-200px");
+      $("#imgOnBanner").addClass("hide");
+    },
+    openBanner: function () {
+      // $("#imgOnBanner").css("right", "40px");
+      $("#imgOnBanner").removeClass("hide");
+    }
+  }
+
+  function scrollFunc () {
+    $(window).scroll(function () {
+      const winYPos = $(window).scrollTop();
+      if (winYPos > 600) {
+        console.log(winYPos);
+        indexBannerHandler.hideBanner();
+      } else {
+        indexBannerHandler.openBanner();
+      }
+    })
+  }
+  scrollFunc();
+
   /*  MODAL handler  */
   const MODALON_CLASSNAME = "modalOn";
 
