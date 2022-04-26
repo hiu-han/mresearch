@@ -67,6 +67,12 @@ $(document).ready(function () {
     personalPolicyOff: function () {
       document.querySelector("#personalPolicy-modal").classList.remove(MODALON_CLASSNAME);
     },
+    posterOn: function () {
+      document.querySelector("#posterModal").classList.add(MODALON_CLASSNAME);
+    },
+    posterOff: function () {
+      document.querySelector("#posterModal").classList.remove(MODALON_CLASSNAME);
+    },
   };
   
   $(personalPolicyBtn).on("click", function () {
@@ -80,6 +86,15 @@ $(document).ready(function () {
   $(modalBg).on("click", function () {
     sModalHandler.modalWrapOff();
     sModalHandler.personalPolicyOff();
+  });
+
+  $("#imgOnBanner").on("click",function () {
+    sModalHandler.modalWrapOn(winWidth);
+    sModalHandler.posterOn();
+  });
+  $("#posterCls").on("click", function () {
+    sModalHandler.modalWrapOff();
+    sModalHandler.posterOff();
   })
 
 })

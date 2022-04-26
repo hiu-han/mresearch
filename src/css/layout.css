@@ -244,6 +244,30 @@ address {
   color: #2d2f91;
 }
 
+/*  이미지 배너  */
+#indexFootContent {
+  display: none;
+}
+#imgOnBanner {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 240px;
+  height: 200px;
+  border: 1px solid #1a1a1a;
+  background-color: #2a2a2a;
+  background-image: url("../img/main/poster_thumb.png");
+  background-size: contain;
+  background-position: center;
+  border-radius: 14px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#imgOnBanner:hover {
+  border: 1px solid #fff;
+  opacity: 0.8;
+}
+
 /*  MODAL wrap  */
 #modal {
   position: fixed;
@@ -457,6 +481,49 @@ address {
 }
 .sheet-footer > p {
   margin-bottom: 6px;
+}
+
+/*  포스터 모달  */
+#posterModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  display: none;
+  z-index: 300;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+}
+#posterModal.modalOn {
+  display: block;
+}
+#posterModal .cls-btn {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+#posterModal .cls-btn > .cls-btn-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 41px;
+  height: 1px;
+  background-color: #fff;
+}
+#posterModal .cls-btn > .cls-btn-bar.bar-1 {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+#posterModal .cls-btn > .cls-btn-bar.bar-2 {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+#posterModal .poster-wrap {
+}
+#posterModal .poster-wrap img {
+  width: 100%;
 }
 
 @media all and (max-width: 1024px) {
@@ -748,11 +815,28 @@ address {
     font-size: 17px;
   }
 
+  /*  이미지 배너 480px  */
+  #imgOnBanner {
+    bottom: 60px;
+    right: 10px;
+    width: 100px;
+    height: 85px;
+    opacity: 0.9;
+  }
+
   /** MODALWRAP **/
   #personalPolicy-modal .modal-content {
     width: 100%;
   }
   #personalPolicy-modal > .modal-title > .modal-cls {
     right: 16px;
+  }
+
+  /*  포스터 모달 480px  */
+  #posterModal {
+    width: 85vw;
+  }
+  #posterModal .cls-btn {
+    right: 0;
   }
 }
