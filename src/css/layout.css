@@ -833,6 +833,9 @@ address {
   #imgOnBanner.hide {
     right: -70px;
   }
+  #imgOnBanner:hover {
+    right: 10px;
+  }
 
   /** MODALWRAP **/
   #personalPolicy-modal .modal-content {
