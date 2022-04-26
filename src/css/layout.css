@@ -492,6 +492,7 @@ address {
 
 /*  포스터 모달  */
 #posterModal {
+  display: none;
   position: absolute;
   top: 40%;
   left: 50%;
