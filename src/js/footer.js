@@ -71,10 +71,10 @@ $(document).ready(function () {
   const sModalHandler = {
     modalWrapOn: function (htmlWidth) {
       modalPkg.addClass(MODALON_CLASSNAME);
-      $('html').css({
-        "overflow": "hidden",
-        "width": htmlWidth
-      });
+      // $('html').css({
+      //   "overflow": "hidden",
+      //   "width": htmlWidth
+      // });
       $(modalBg).on("scroll touchmove mousewheel", function (e) {
         e.preventDefault();
         e.stopPropagation();
@@ -83,10 +83,10 @@ $(document).ready(function () {
     },
     modalWrapOff: function () {
       modalPkg.removeClass(MODALON_CLASSNAME);
-      $('html').css({
-        "overflow": "unset",
-        "width": "100%"
-      });
+      // $('html').css({
+      //   "overflow": "unset",
+      //   "width": "100%"
+      // });
       $(modalBg).off("scroll touchmove mousewheel");
     },
     personalPolicyOn: function () {
@@ -114,6 +114,7 @@ $(document).ready(function () {
   $(modalBg).on("click", function () {
     sModalHandler.modalWrapOff();
     sModalHandler.personalPolicyOff();
+    sModalHandler.posterOff();
   });
 
   $("#imgOnBanner").on("click",function () {
