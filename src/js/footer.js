@@ -117,13 +117,13 @@ $(document).ready(function () {
     sModalHandler.posterOff();
   });
 
-  $("#imgOnBanner").on("click",function () {
-    sModalHandler.modalWrapOn(winWidth);
-    sModalHandler.posterOn();
-  });
-  $("#posterCls").on("click", function () {
-    sModalHandler.modalWrapOff();
-    sModalHandler.posterOff();
-  })
+  // $("#imgOnBanner").on("click",function () {
+  //   sModalHandler.modalWrapOn(winWidth);
+  //   sModalHandler.posterOn();
+  // });
+  // $("#posterCls").on("click", function () {
+  //   sModalHandler.modalWrapOff();
+  //   sModalHandler.posterOff();
+  // })
 
 })

@@ -103,7 +103,7 @@ nav {
   transition: 0.25s;
 }
 .gnb > .menu-item > a::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: 0px;
@@ -195,7 +195,7 @@ address {
   color: #666;
 }
 .addr-info > .co-info::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 1px;
@@ -249,6 +249,7 @@ address {
   display: none;
 }
 #imgOnBanner {
+  display: none;
   position: fixed;
   bottom: 60px;
   right: 40px;
@@ -256,7 +257,7 @@ address {
   height: 200px;
   border: 1px solid #1a1a1a;
   background-color: #2a2a2a;
-  background-image: url("../img/main/poster_thumb.png");
+  background-image: url('../img/main/poster_thumb.png');
   background-size: contain;
   background-position: center;
   border-radius: 14px;
@@ -356,7 +357,7 @@ address {
   cursor: pointer;
 }
 #personalPolicy-modal > .modal-title::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 90px;
@@ -373,7 +374,7 @@ address {
   overflow: hidden;
 }
 #personalPolicy-modal > .modal-inner::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: 0px;
@@ -402,7 +403,7 @@ address {
   margin-bottom: 8px;
 }
 .modal-content > .sheet-header > p::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 8px;
@@ -465,7 +466,7 @@ address {
   margin-left: 16px;
 }
 .sheet-content .para-cont-sub > span::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 12px;
