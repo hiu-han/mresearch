@@ -865,12 +865,12 @@ address {
     right: 10px;
   }
   #imgOnBanner .img-inner {
-    width: 340px;
-    height: 255px;
+    width: 320px;
+    height: 240px;
     background-image: url('../img/main/kora-banner-03.jpg');
   }
   #imgOnBanner.hide {
-    right: -315px;
+    right: -300px;
   }
   #imgOnBanner:hover {
     right: 10px;
