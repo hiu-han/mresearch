@@ -249,31 +249,62 @@ address {
   display: none;
 }
 #imgOnBanner {
-  display: none;
+  display: block;
   position: fixed;
   bottom: 60px;
   right: 40px;
-  width: 240px;
-  height: 200px;
-  border: 1px solid #1a1a1a;
-  background-color: #2a2a2a;
-  background-image: url('../img/main/poster_thumb.png');
-  background-size: contain;
-  background-position: center;
-  border-radius: 14px;
+  padding: 5px;
+  border-radius: 19px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: 0.4s;
   /* opacity: 0.7; */
 }
 #imgOnBanner.hide {
-  right: -160px;
+  right: -280px;
 }
 #imgOnBanner:hover {
   right: 40px;
-  border: 1px solid #fff;
-  /* opacity: 1; */
-  opacity: 0.8;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+#imgOnBanner .img-inner {
+  width: 380px;
+  height: 380px;
+  background-image: url('../img/main/kora-banner.jpg');
+  background-repeat: no-repeat;
+  /* height: 507px; */
+  /* background-image: url('../img/main/kora-banner-02.jpg'); */
+  background-size: contain;
+  background-position: center;
+  border-radius: 14px;
+}
+#imgOnBanner:hover .img-inner {
+  opacity: 0.85;
+}
+#imgOnBanner .btn--link > a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 22px;
+  border-radius: 30px;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: 0.4s;
+}
+#imgOnBanner:hover .btn--link > a {
+  opacity: 1;
+}
+#imgOnBanner:hover .btn--link > a:hover {
+  background-color: #e75613;
+  color: #fff;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
 /*  MODAL wrap  */
@@ -832,12 +863,14 @@ address {
   #imgOnBanner {
     bottom: 40px;
     right: 10px;
-    width: 100px;
-    height: 85px;
-    opacity: 0.9;
+  }
+  #imgOnBanner .img-inner {
+    width: 340px;
+    height: 255px;
+    background-image: url('../img/main/kora-banner-03.jpg');
   }
   #imgOnBanner.hide {
-    right: -70px;
+    right: -315px;
   }
   #imgOnBanner:hover {
     right: 10px;
@@ -857,7 +890,6 @@ address {
     width: 90vw;
   }
   #posterModal .cls-btn {
-    /* right: 0; */
     width: 35px;
     height: 35px;
   }
